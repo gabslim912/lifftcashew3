@@ -1,0 +1,166 @@
+<section class="bg-lighter">
+  <div class="container pt-40 pb-40">
+    <div class="row">
+      <div class="col-md-5">
+        <h4 class="mt-5">Subscribe to our newsletter to connect with us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum officiis, odit harum!</p>
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        
+        <!-- Mailchimp Subscription Form-->
+        <form id="mailchimp-subscription-form9" class="newsletter-form mt-30">
+          <div class="input-group">
+            <input type="email" id="mce-EMAIL" data-height="45px" class="form-control input-lg" placeholder="Your Email" name="EMAIL" value="">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-colored btn-theme-colored btn-lg m-0" data-height="45px">Subscribe</button>
+            </span>
+          </div>
+        </form>             
+
+        <!-- Mailchimp Subscription Form Validation-->
+        <script type="text/javascript">
+          $('#mailchimp-subscription-form9').ajaxChimp({
+              callback: mailChimpCallBack,
+              url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+          });
+
+          function mailChimpCallBack(resp) {
+              // Hide any previous response text
+              var $mailchimpform = $('#mailchimp-subscription-form9'),
+                  $response = '';
+              $mailchimpform.children(".alert").remove();
+              if (resp.result === 'success') {
+                  $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+              } else if (resp.result === 'error') {
+                  $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+              }
+              $mailchimpform.prepend($response);
+          }
+        </script>
+        
+      </div>
+    </div> 
+  </div>       
+</section>
+<footer id="footer" class=" divider parallax layer-overlay overlay-dark-9" data-bg-img="/assets/img/cashew_141.jpg" data-parallax-ratio="0.1">
+  <div class="container pt-70 pb-40">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <img src="{{ site.logo_white2 }}" alt="Lifft Cashew Project" style="width: 200px;">
+        <p class=" mb-20">Our program addresses this by developing value chain linkages necessary to support an integrated regional trade network for the cashew value chain, and enhancing the production and trade of cashews in local and international markets..</p>
+        <ul class="styled-icons icon-dark icon-circled icon-sm mb-40">
+          <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a> </li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <div class="widget dark">
+          <h5 class="widget-title line-bottom">Useful Links</h5>
+          <ul class="list-border">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="/sitemap.html">Sitemap</a></li>
+            <li><a href="/faq.html">Faq's</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="widget dark">
+          <h5 class="widget-title line-bottom">Twitter Feed</h5>
+          <div class="twitter-feed list-border clearfix" data-username="Envato" data-count="2"></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="widget dark">
+          <h6 class="widget-title line-bottom">Quick Contact</h6>
+          <form id="quick_contact_form2" name="footer_quick_contact_form" class="quick-contact-form" action="includes/quickcontact.php" method="post">
+            <div class="form-group">
+              <input name="form_email" class="form-control" type="text" required="" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+              <textarea name="form_message" class="form-control" required="" placeholder="Enter Message" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <input name="form_botcheck" class="form-control" type="hidden" value="" />
+              <button type="submit" class="btn btn-default btn-flat btn-xs btn-transparent text-gray pt-5 pb-5" data-loading-text="Please wait...">Send Message</button>
+            </div>
+          </form>
+
+          <!-- Quick Contact Form Validation-->
+          <script type="text/javascript">
+            $("#quick_contact_form2").validate({
+              submitHandler: function(form) {
+                var form_btn = $(form).find('button[type="submit"]');
+                var form_result_div = '#form-result';
+                $(form_result_div).remove();
+                form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                var form_btn_old_msg = form_btn.html();
+                form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                $(form).ajaxSubmit({
+                  dataType:  'json',
+                  success: function(data) {
+                    if( data.status == 'true' ) {
+                      $(form).find('.form-control').val('');
+                    }
+                    form_btn.prop('disabled', false).html(form_btn_old_msg);
+                    $(form_result_div).html(data.message).fadeIn('slow');
+                    setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                  }
+                });
+              }
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="widget dark">
+          <h5 class="widget-title line-bottom">Opening Hours</h5>
+          <div class="opening-hours">
+            <ul class="list-border">
+              <li class="clearfix"> <span>Senegal: Mon - Fri:  </span>
+                <div class="value pull-right flip"> 8.30 am - 17.30 pm </div>
+              </li>
+              <li class="clearfix"> <span>Gambia: Mon - Fri:  </span>
+                <div class="value pull-right flip"> 8.30 am - 17.30 pm </div>
+              </li>
+              <li class="clearfix"> <span>Bissau: Mon - Fri:  </span>
+                <div class="value pull-right flip"> 8.30 am - 17.30 pm </div>
+              </li>
+              <li class="clearfix"> <span> Sat - Sun : </span>
+                <div class="value pull-right flip"> Closed </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom bg-black-333">
+    <div class="container pt-10 pb-0">
+      <div class="row">
+        <div class="col-md-6 sm-text-center">
+          <p class="font-13 text-black-777 m-0">Copyright &copy;2020 Shelter For Life International. All Rights Reserved</p>
+        </div>
+        <div class="col-md-6 text-right flip sm-text-center">
+          <div class="widget no-border m-0">
+            <ul class="styled-icons icon-dark icon-circled icon-sm">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>

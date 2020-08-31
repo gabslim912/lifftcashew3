@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<!-- Start main-content -->
+<div class="main-content">
+    <!-- Section: inner-header -->
+    {% include heading.html %}
+
+    <!-- Section: event calendar -->
+    <section>
+	    <div class="container">
+	        <div class="row">
+	          <div class="col-md-12">
+	          	{% for event in site.events %}
+	            <div class="upcoming-events bg-white-f3 mb-20">
+	              <div class="row">
+	                <div class="col-sm-4 pr-0 pr-sm-15">
+	                  <div class="thumb p-15">
+	                    <img class="img-fullwidth" src="{{ event.image }}" alt="{{ event.title }}">
+	                  </div>
+	                </div>
+	                <div class="col-sm-4 pl-0 pl-sm-15">
+	                  <div class="event-details p-15 mt-20">
+	                    <h4 class="mt-0 text-uppercase font-weight-500">{{ event.title }}</h4>
+	                    <p>{{ event.subtitle }}</p>
+	                    <a href="{{ event.url }}" class="btn btn-flat btn-dark btn-theme-colored btn-sm mt-10">Details <i class="fa fa-angle-double-right"></i></a>
+	                  </div>
+	                </div>
+	                <div class="col-sm-4">
+	                  <div class="event-count p-15 mt-15">
+	                    <ul class="event-date list-inline font-16 text-uppercase mt-10 mb-20">
+	                      <li class="p-15 mr-5 bg-lightest">{{event.start_date | date: "%b"}}</li>
+	                      <li class="p-15 pl-20 pr-20 mr-5 bg-lightest"> {{event.start_date | date: "%d"}}</li>
+	                      <li class="p-15 bg-lightest">{{event.start_date | date: "%y"}}</li>
+	                    </ul>
+	                    <ul>
+	                      <li class="mb-10"><a href="#"><i class="fa fa-clock-o mr-5"></i> at 5.00 pm - 7.30 pm</a></li>
+	                      <li><a href="#"><i class="fa fa-map-marker mr-5"></i> <strong>{{ event.location_address }},</strong> {{ event.location_town }}, {{ event.location_region }}, {{ event.location_country }}</a></li>
+	                    </ul>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	            {% endfor %}
+	            <div class="row">
+	              <div class="col-sm-12">
+	                <nav>
+	                  <ul class="pagination theme-colored pull-right xs-pull-center mb-xs-40">
+	                    <li> <a href="#" aria-label="Previous"> <span aria-hidden="true">«</span> </a> </li>
+	                    <li class="active"><a href="#">1</a></li>
+	                    <!--<li><a href="#">2</a></li>
+	                    <li><a href="#">3</a></li>
+	                    <li><a href="#">4</a></li>
+	                    <li><a href="#">5</a></li>
+	                    <li><a href="#">...</a></li>-->
+	                    <li> <a href="#" aria-label="Next"> <span aria-hidden="true">»</span> </a> </li>
+	                  </ul>
+	                </nav>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+    </section>
+</div>
+<!-- end main-content -->

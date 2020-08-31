@@ -1,0 +1,122 @@
+<!-- Header -->
+<header id="header" class="header">
+    <div class="header-top bg-colored sm-text-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="widget no-border m-0">
+              <ul class="styled-icons icon-dark icon-circled icon-theme-colored icon-sm flip sm-pull-none sm-text-center mt-sm-0">
+                <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-7" style="margin-top: 8px;">
+            <div class="widget no-border m-0">
+              <ul class="list-inline pull-right sm-pull-none sm-text-center mt-0">
+                <li>
+                  <a href="/faq.html" class="text-colored">FAQ</a>
+                </li>
+                <li class="text-colored">|</li>
+                <li>
+                  <a href="https://www.shelter.org/donate" target="blank" class="text-colored">Donate</a>
+                </li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-colored"></i> <a href="#" class="text-colored">{{ site.email }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="header-nav-wrapper navbar-scrolltofixed bg-light">
+        <div class="container-fluid">
+          <nav id="menuzord-right" class="menuzord default no-bg" style="margin-top: 10px;">
+            <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="/"><img src="{{ site.logo_white }}" alt="" style="max-height: 75px; margin-top: -10px; margin-bottom: -10px;"></a>
+            <ul class="menuzord-menu" style="margin-left: 60px;">
+              <li class="active"><a href="/">Home</a>
+                
+              </li>
+              <li><a href="/about.html">About</a>
+                
+              </li>
+              <li><a href="/donors.html">Donors & Partners</a>
+                
+              </li>
+              <li><a href="/our_work.html">Our Work</a>
+                <ul class="dropdown">
+                  <li><a href="#">Our Approach</a></li>
+                  <li><a href="#">Our Intervention Area</a></li>
+                  
+                </ul>
+              </li>
+              <li><a href="#">Our impact</a>
+                <ul class="dropdown">
+                  <li><a href="#">Project results</a></li>
+                  <li><a href="#">Success stories</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:void(0)">News and Events</a>
+                <div class="megamenu">
+                  <div class="megamenu-row">
+                    <div class="col3">
+                      <ul class="list-unstyled list-dashed">
+                        <li>
+                          <h5 class="pl-10"><strong>Quick Links:</strong></h5>
+                        </li>
+                        <li><a href="/blog.html">Latest News</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <li><a href="/stories.html">Success stories</a></li>
+                        <li><a href="/press.html">Press releases</a></li>
+                        <li><a href="/publications.html">Publications</a></li>
+                        
+                      </ul>
+                    </div>
+                    <div class="col5">
+                      <h5 class=""><strong>Next Event:</strong></h5>
+                      <article class="post clearfix">
+                        <div>
+                          {% assign last_event = site.events | last %}
+                          <div class="post-thumb"> <img class="img-responsive" src="{{ last_event.image }}" alt="" style="width: 80%; height: auto; margin-bottom: 12px;"> </div>
+                          <h4 class="entry-title"><a href="{{ last_event.url }}">{{ last_event.title }}</a></h4>
+                        </div>
+                        <div>
+                          <p class="">L{{ last_event.subtitle }}</p>
+                          <a class="btn btn-default btn-xs" href="{{ last_event.url }}">Read more..</a> </div>
+                      </article>
+                    </div>
+                    <div class="col4">
+                      <h5 class=""><strong>Latest News:</strong></h5>
+                      <div class="list-dashed">
+                        {% for post in site.posts %}
+                        <article class="post media-post clearfix pb-0 mb-10"> <a href="{{ post.url }}" class="post-thumb"><img alt="" src="{{ post.image }}" style="width: 50px; height: 50px;"></a>
+                          <div class="post-right">
+                            <h5 class="post-title mt-0"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                            <p>{{ post.publication_date | date: "%b %d, %y" }}</p>
+                          </div>
+                        </article>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Contact Us</a>
+                <ul class="dropdown">
+                  <li><a href="/contact.html">Contact us</a></li>
+                  <li><a href="/join_us.html">Join our team</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!--<a class="btn btn-sm btn-theme-colored pull-right flip hidden-sm hidden-xs mt-20 ajaxload-popup" href="ajax-load/donation-form.html" >Donate Now</a>-->
+          </nav>
+        </div>
+      </div>
+    </div>
+</header>

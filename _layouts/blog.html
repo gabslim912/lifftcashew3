@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<!-- Start main-content -->
+<div class="main-content">
+    <!-- Section: inner-header -->
+    {% include heading.html %}
+    <!-- Section: Blog -->
+    <section>
+      <div class="container mt-30 mb-30 pt-30 pb-0">
+        <div class="row multi-row-clearfix">
+          <div id="blog-posts-wrapper" class="blog-posts">
+          	{% for post in site.posts %}
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <article class="post clearfix maxwidth600 mb-30">
+                <div class="entry-header">
+                  <div class="post-thumb thumb"> <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive img-fullwidth" style="width: 555px; height: 416px;"> </div>
+                </div>
+                <div class="entry-content border-1px p-20">
+                  <h5 class="entry-title mt-0 pt-0"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                  <ul class="list-inline entry-date font-12 mt-5">
+                    <li class="pr-0"><a class="text-theme-colored" href="#">{{ post.author }} |</a></li>
+                    <li class="pl-0"><span class="text-theme-colored">{{ post.publication_date | date: "%b %d, %y" }}</span></li>
+                  </ul>
+                  <p class="text-left mb-20 mt-15 font-13" style="height: 40px;">{{ post.subtitle | slice: 0, 80 }} ...</p>
+                  <a class="btn btn-dark btn-theme-colored btn-xs btn-flat mt-0" href="{{ post.url }}">Read more</a>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+            {% endfor %}
+          </div>
+          
+          <div class="clearfix"></div>
+          <!-- Infinity Loadmore Button -->
+          <div id="load-next-posts" class="p-15 pt-0 pb-0">
+            <a href="#" class="btn btn-default btn-lg btn-block">Load more...</a>
+          </div>
+          
+
+          <!-- Infinity Loadmore Script -->
+          <script>
+            $(window).load(function(){
+              $('#load-next-posts a').appear();
+              $(document.body).on('appear', '#load-next-posts a', function() {
+                var $infinityload_container = $('#blog-posts-wrapper');
+                $infinityload_container.infinitescroll({
+                  //debug         : true,
+                  loading: {
+                    finishedMsg: '<i class="fa fa-check"></i>',
+                    msgText: '<i class="fa fa-spinner fa-spin"></i>',
+                    img: "images/preloaders/1.gif",
+                    speed: 'normal'
+                  },
+                  state: {
+                    isDone: false
+                  },
+                  nextSelector: "#load-next-posts a",
+                  navSelector: "#load-next-posts",
+                  itemSelector  : "#blog-posts-wrapper > .col-sm-6",
+                  //behavior: 'twitter'
+                },
+                function( newElements ) {
+                  $infinityload_container.find('#infscr-loading').remove();
+                });
+              });
+            });
+          </script>
+
+        </div>
+      </div>
+    </section>
+</div>
+<!-- end main-content -->

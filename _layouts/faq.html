@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<!-- Start main-content -->
+  <div class="main-content">
+    <!-- Section: inner-header -->
+    {% include heading.html %}
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div id="accordion1" class="panel-group accordion">
+            	{% for faq in site.faqs %}
+	            <div class="panel">
+	                <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion1{{ faq.number }}" class="active" aria-expanded="false"> <span class="open-sub"></span> <strong>Q. {{ faq.title }}</strong></a> </div>
+	                <div id="accordion11" class="panel-collapse collapse in" role="tablist" aria-expanded="false">
+	                  <div class="panel-content">
+	                    <p>{{ faq.answer }}</p>
+	                  </div>
+	                </div>
+	            </div>
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
