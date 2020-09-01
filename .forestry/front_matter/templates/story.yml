@@ -1,0 +1,59 @@
+---
+label: Story
+hide_body: false
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: story
+  hidden: true
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: first_name
+  type: text
+  config:
+    required: false
+  label: First Name
+- name: last_name
+  type: text
+  config:
+    required: false
+  label: Last Name
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: MM/DD/YYYY
+    time_format: 
+    display_utc: false
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  default: "/uploads/event_1.jpg"
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subtitle
+pages:
+- _stories/after-two-decades-families-return-home.md
+- _stories/better-prices-for-cashew-farmer-thanks-to-new-road.md
+- _stories/new-road-leads-to-market-access-helps-promote-peace.md

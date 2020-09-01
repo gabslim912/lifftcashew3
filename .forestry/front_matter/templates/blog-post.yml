@@ -1,0 +1,132 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: post
+  hidden: true
+- name: lang
+  type: select
+  default: Eng
+  config:
+    required: true
+    options:
+    - Eng
+    - Por
+    - Fr
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Language
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+  default: John Doe
+- name: location_t
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Ziguinchor
+    - Kotu
+    - Bissau
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location - Town
+- name: location_r
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Senegambia
+    - Bissau
+    - Casamance
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location Region
+- name: location_c
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Senegal
+    - Gambia
+    - Guinee-Bissau
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location Country
+- name: categories
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Cashew
+    - Government
+    - Project
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Categories
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Insert the title here
+- name: subtitle
+  type: textarea
+  default: Insert the subtitle here
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subtitle
+- name: tags
+  type: tag_list
+  default:
+  - cashew
+  - lifft cashew
+  label: Tags
+- name: publication_date
+  type: datetime
+  description: ''
+  config:
+    required: true
+    date_format: MM/DD/YYYY
+    time_format: h:mm
+    display_utc: false
+    export_format: MM/DD/YYYY h:mm
+  label: Publication date
+  default: now
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+  default: "/uploads/blog-post.jpg"
+pages:
+- _posts/2020-07-10-welcome-to-jekyll.markdown

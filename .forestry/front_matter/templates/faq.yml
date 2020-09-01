@@ -1,0 +1,24 @@
+---
+label: Faq
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Question
+- name: answer
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Answer
+pages:
+- _faqs/what-are-the-main-challenges-faced-by-this-project.md
+- _faqs/what-is-the-lifft-cashew-project.md
+- _faqs/what-is-the-main-goal-of-sfl-international-through-the-lifft-cashew-project.md
+- _faqs/which-regions-are-concern-by-this-project.md
+- _faqs/who-are-the-main-contributors-of-the-lifft-cashew-project.md

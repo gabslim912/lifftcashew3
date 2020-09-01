@@ -1,0 +1,83 @@
+---
+label: Event
+hide_body: false
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: event
+  hidden: true
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  default: "/uploads/event_1.jpg"
+- name: start_date
+  type: datetime
+  label: Start date
+  description: ''
+  config:
+    required: false
+    date_format: MM/DD/YYYY
+    time_format: h:mm
+    display_utc: false
+    export_format: ''
+  default: now
+- name: finish_date
+  type: datetime
+  label: Finish date
+  description: ''
+  config:
+    required: false
+    date_format: MM/DD/YYYY
+    time_format: h:mm
+    display_utc: false
+    export_format: MM/DD/YYYY h:mm
+  default: now
+- name: location_address
+  type: text
+  config:
+    required: false
+  label: Location address
+- name: location_town
+  type: text
+  config:
+    required: false
+  label: Location town
+- name: location_region
+  type: text
+  config:
+    required: false
+  label: Location region
+- name: location_country
+  type: text
+  config:
+    required: false
+  label: Location country
+- name: phone
+  type: text
+  config:
+    required: false
+  label: Phone
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
+pages:
+- _events/2020-annual-visit-of-u.s.ambassador-to-senegal.md
+- _events/2020-lifft-cashew-project-conference.md
+- _events/2020-world-cashew-convention-exhibition.md
