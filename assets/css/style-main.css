@@ -116,8 +116,8 @@ This file contains the common styles of this theme.
 body {
   line-height: 1.7;
   color: #777777;
-  font-size: 14px;
-  font-family: 'Vniyl', sans-serif;
+  font-size: 18px;
+  font-family: 'Vinyl', sans-serif;
   background-color: #fff;
   background-attachment: fixed;
 }
@@ -2292,7 +2292,7 @@ form .error {
 */
 /* -------- Rev Slider ---------- */
 #home .revslider-fullscreen {
-  min-height: auto;
+  min-height: 100%;
 }
 /* -------- Home Revolution Slider For Minimal Layouts ---------- */
 .minimal-revslider-wrapper {
