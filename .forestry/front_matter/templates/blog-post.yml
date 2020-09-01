@@ -128,5 +128,3 @@ fields:
     maxSize: 64
   label: image
   default: "/uploads/blog-post.jpg"
-pages:
-- _posts/2020-07-10-welcome-to-jekyll.markdown
