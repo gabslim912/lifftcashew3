@@ -78,3 +78,5 @@ fields:
     required: false
   label: E-mail
   default: segabi.jobs@shelter.org
+pages:
+- _jobs/m-e-manager-senegal-gambia-and-guinea-bissau.md
