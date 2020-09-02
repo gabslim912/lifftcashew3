@@ -8,7 +8,6 @@ deadline: 2020-09-20 00:00:00 +0000
 town: Ziguinchor
 address: 178, Néma Complémentaire
 country: Senegal
-published: false
 
 ---
 Shelter For Life International (SFL) is a Christian Relief and Development organization with over 30 years of history in providing humanitarian assistance to post conflict countries. SFL is currently operational in Afghanistan, Liberia, and Senegal. Our Headquarters is located in Minnetonka, MN. Our mission is to Demonstrate God’s love by enabling people affected by conflict and disaster to restore their lives and rebuild their communities. Learn more at [www.shelter.org](http://www.shelter.org/).
