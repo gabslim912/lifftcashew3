@@ -61,6 +61,7 @@ layout: default
 		          </div>
 	            {% endfor %}
 	        </div>
+	        <br>
 	        <div class="row">
 	          	<div class="title-separator mb-60">
 				  <span class="text-uppercase font-26"> IMPLEMENTED BY</span>
@@ -98,7 +99,45 @@ layout: default
 		          </div>
 	            {% endfor %}
 	        </div>
-	        
+	        <br>
+	        <div class="row">
+	          	<div class="title-separator mb-60">
+				  <span class="text-uppercase font-26"> IMPLEMENTED PARTNERS</span>
+				</div>
+				{% assign donorss = site.donors | where:"category", "Implemented partners" %}
+	            {% for donor in donorss %}
+	            <div class="col-md-8">
+	                <div class="drop-caps">
+				    <p>{{ donor.donor_or_partner_contribution }}</p>
+				    </div>
+				    <blockquote class="blockquote-reverse">
+				    	<p>{{ donor.quote_text }}</p>
+  						<footer>{{ donor.quote_author }} <cite title="Source Title">{{ donor.author_position }} of {{ donor.title }}</cite></footer>
+				    </blockquote>
+				</div>
+	            <div class="col-md-4">
+		            <div class="card effect__hover">
+		               <div class="card__front " style="background-image: url('{{ donor.logo }}'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
+		                  
+		               </div>
+		                <div class="card__back layer-overlay overlay-lighterr " style="background-image: url('{{ donor.logo }}'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
+			                <div class="card__text">
+			                  <div class="display-table-parent p-30">
+			                      <div class="display-table">
+			                        <div class="display-table-cell">
+			                          <h4><b>{{ donor.title }}</b></h4>
+			                          <p>{{ donor.donor_or_partner_biography }}</p>
+			                          <a href="#" class="btn btn-default mt-10"> View website </a>
+			                        </div>
+			                      </div>
+			                  </div>
+			                </div>
+		                </div>
+		            </div><!-- /flip-box -->
+		          </div>
+	            {% endfor %}
+	        </div>
+
         </div>
       </div>
     </section>
