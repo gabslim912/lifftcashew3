@@ -1,0 +1,127 @@
+---
+layout: default
+---
+<!-- Start main-content -->
+<div class="main-content">
+	<!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-white-8" data-bg-img="http://placehold.it/1920x1280">
+      <div class="container pt-60 pb-60">
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="title">{{ page.title }}</h2>
+              <ol class="breadcrumb text-center text-black mt-10">
+                <li><a href="#">Home</a></li>
+                <li class="active text-theme-colored">{{ page.title }}</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-lighter">
+      <div class="container">
+        <div class="section-content">
+	        <div class="row">
+	          	<div class="title-separator mb-60">
+				  <span class="text-uppercase font-26"> FUNDED BY</span>
+				</div>
+				{% assign donorss = site.donors | where:"category", "Funded by" %}
+	            {% for donor in donorss %}
+	            <div class="col-md-8">
+	                <div class="drop-caps">
+				    <p>{{ donor.donor_or_partner_contribution }}</p>
+				    </div>
+				    <blockquote class="blockquote-reverse">
+				    	<p>{{ donor.quote_text }}</p>
+  						<footer>{{ donor.quote_author }} <cite title="Source Title">{{ donor.author_position }} of {{ donor.title }}</cite></footer>
+				    </blockquote>
+				</div>
+	            <div class="col-md-4">
+		            <div class="card effect__hover">
+		               <div class="card__front " style="background-image: url('{{ donor.logo }}'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
+		                  
+		               </div>
+		                <div class="card__back layer-overlay overlay-lighterr " style="background-image: url('{{ donor.logo }}'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
+			                <div class="card__text">
+			                  <div class="display-table-parent p-30">
+			                      <div class="display-table">
+			                        <div class="display-table-cell">
+			                          <h4><b>{{ donor.title }}</b></h4>
+			                          <p>{{ donor.donor_or_partner_biography }}</p>
+			                          <a href="#" class="btn btn-default mt-10"> View website </a>
+			                        </div>
+			                      </div>
+			                  </div>
+			                </div>
+		                </div>
+		            </div><!-- /flip-box -->
+		          </div>
+	            {% endfor %}
+	        </div>
+	        <div class="row">
+	          	<div class="title-separator mb-60">
+				  <span class="text-uppercase font-26"> IMPLEMENTED BY</span>
+				</div>
+				{% assign donorss = site.donors | where:"category", "Implemented by" %}
+	            {% for donor in donorss %}
+	            <div class="col-md-8">
+	                <div class="drop-caps">
+				    <p>{{ donor.donor_or_partner_contribution }}</p>
+				    </div>
+				    <blockquote class="blockquote-reverse">
+				    	<p>{{ donor.quote_text }}</p>
+  						<footer>{{ donor.quote_author }} <cite title="Source Title">{{ donor.author_position }} of {{ donor.title }}</cite></footer>
+				    </blockquote>
+				</div>
+	            <div class="col-md-4">
+		            <div class="card effect__hover">
+		               <div class="card__front " style="background-image: url('{{ donor.logo }}'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
+		                  
+		               </div>
+		                <div class="card__back layer-overlay overlay-lighterr " style="background-image: url('{{ donor.logo }}'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
+			                <div class="card__text">
+			                  <div class="display-table-parent p-30">
+			                      <div class="display-table">
+			                        <div class="display-table-cell">
+			                          <h4><b>{{ donor.title }}</b></h4>
+			                          <p>{{ donor.donor_or_partner_biography }}</p>
+			                          <a href="#" class="btn btn-default mt-10"> View website </a>
+			                        </div>
+			                      </div>
+			                  </div>
+			                </div>
+		                </div>
+		            </div><!-- /flip-box -->
+		          </div>
+	            {% endfor %}
+	        </div>
+	        
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section: Divider call -->
+    <section class="divider layer-overlay overlay-theme-colored" data-bg-img="{{ page.parallax_image }}">
+      <div class="container pt-0 pb-0">
+        <div class="row">
+          <div class="call-to-action">
+            <div class="col-md-9">
+              <h2 class="text-white font-opensans font-30">Become a contributor now</h2>
+              <h3 class="text-white font-opensans font-24">Register now and contribute on our beautiful project</h3>
+            </div>
+            <div class="col-md-3 mt-30"> 
+              <a href="#" class="btn btn-default btn-circled btn-lg">Register Now</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+</div>
+<!-- end main-content -->
