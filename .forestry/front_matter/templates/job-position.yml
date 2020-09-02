@@ -1,4 +1,80 @@
 ---
 label: Job position
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Full-time
+    - Partial-time
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+- name: deadline
+  type: datetime
+  label: Deadline
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - HQ POSITIONS
+    - FIELD POSITIONS
+    - SENEGAL
+    - GUINEA-BISSAU
+    - THE GAMBIA
+    - REQUEST FOR PROPOSALS
+    - BIDDING DOCUMENTS
+    - INTERNSHIPS
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: job
+  hidden: true
+- name: town
+  type: text
+  config:
+    required: false
+  label: Town
+- name: address
+  type: text
+  config:
+    required: false
+  label: Address
+- name: country
+  type: text
+  config:
+    required: false
+  label: Country
+- name: email
+  type: text
+  config:
+    required: false
+  label: E-mail
+  default: segabi.jobs@shelter.org
