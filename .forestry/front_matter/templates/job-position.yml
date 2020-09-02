@@ -79,5 +79,6 @@ fields:
   label: E-mail
   default: segabi.jobs@shelter.org
 pages:
+- _jobs/administration-logistics-assistant-the-gambia.md
 - _jobs/logistics-assistant.md
 - _jobs/m-e-manager-senegal-gambia-and-guinea-bissau.md
