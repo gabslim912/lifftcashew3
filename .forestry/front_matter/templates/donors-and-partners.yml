@@ -1,4 +1,73 @@
 ---
 label: Donors and partners
 hide_body: true
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: donors
+  hidden: true
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Implemented by
+    - Funded by
+    - Implementing partners
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: logo
+  type: file
+  config:
+    maxSize: 64
+  label: Logo
+- name: quote_author
+  type: text
+  config:
+    required: false
+  label: Quote author
+- name: author_position
+  type: text
+  config:
+    required: false
+  label: Author position
+- name: quote_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Quote text
+- name: donor_or_partner_biography
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Donor or partner biography
+- name: donor_or_partner_contribution
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Donor or partner contribution
