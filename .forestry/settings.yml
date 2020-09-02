@@ -4,13 +4,6 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
-- type: directory
-  path: _donors
-  label: Donors and partners
-  create: all
-  match: "**/*"
-  templates:
-  - donors-and-partners
 - type: heading
   label: Add News, Events & Success stories here
 - type: directory
@@ -41,6 +34,13 @@ sections:
   match: "**/*"
   templates:
   - job-position
+- type: directory
+  path: _donors
+  label: Donors and partners
+  create: all
+  match: "**/*"
+  templates:
+  - donors-and-partners
 - type: heading
   label: FAQ (Add questions and answers here)
 - type: directory
