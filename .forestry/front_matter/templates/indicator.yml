@@ -1,4 +1,64 @@
 ---
 label: Indicator
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Infrastruture
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: indicator
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  default: Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium,
+    accusantium impedit magnam nobis
+- name: result
+  type: number
+  label: Result
+  description: ''
+  default: 600
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: goal
+  type: number
+  label: Goal
+  description: ''
+  default: 1000
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Infrastructure
+    - Formations
+    - Funding
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
