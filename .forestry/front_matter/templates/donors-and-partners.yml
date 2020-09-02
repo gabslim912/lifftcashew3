@@ -71,3 +71,5 @@ fields:
     schema:
       format: markdown
   label: Donor or partner contribution
+pages:
+- _donors/usda.md
