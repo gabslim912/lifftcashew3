@@ -27,6 +27,13 @@ sections:
   - story
 - type: heading
   label: Add job positions here
+- type: directory
+  path: _jobs
+  label: Job positions
+  create: all
+  match: "**/*"
+  templates:
+  - job-position
 - type: heading
   label: FAQ (Add questions and answers here)
 - type: directory
