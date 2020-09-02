@@ -63,4 +63,5 @@ fields:
     maxSize: 64
   label: Image
 pages:
+- _indicators/formations.md
 - _indicators/infrastruture.md
