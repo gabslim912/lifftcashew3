@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-white-8" data-bg-img="http://placehold.it/1920x1280">
+      <div class="container pt-60 pb-60">
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="title">{{ page.title }}</h2>
+              <ol class="breadcrumb text-center text-black mt-10">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active text-theme-colored">{{ page.title }}</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Causes -->
+    <section>
+      <div class="container pb-sm-30">
+        <!--<div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-uppercase font-28">Latest <span class="text-theme-colored font-weight-400">Causes</span> <span class="font-30 text-theme-colored"></span></h2>
+              <p class="lead">We are charity/ non-profit/ fundraising/ NGO organizations. Our charity activities are taken place around the 
+              world,let contribute to them with us by your hand to be a better life</p>
+            </div>
+          </div>
+        </div>-->
+        <div class="section-content">
+          <div class="row mtli-row-clearfix">
+          	{% for indicator in site.indicators %}
+            <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="10">
+              <div class="causes bg-lighter maxwidth500 mb-sm-30">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="{{ indicator.title }}" src="{{ indicator.image }}">
+                </div>
+                <div class="progress-item mt-0">
+                  <div class="progress mb-0">
+                    <div class="progress-bar" data-percent="60"></div>
+                  </div>
+                </div>
+                <div class="causes-details clearfix border-bottom p-15 pt-10">
+                  <h4><a href="#">{{ indicator.title }}</a></h4>
+                  <p>{{ indicator.subtitle }}</p>
+                  <ul class="list-inline clearfix mt-20">
+                    <li class="pull-left flip pr-0">Result: <span class="font-weight-700">{{ indicator.result }}</span></li>
+                    <li class="text-theme-colored pull-right flip pr-0">Goal: <span class="font-weight-700">{{ indicator.goal }}</span></li>
+                  </ul>
+                  <div class="mt-10 clearfix">
+                   <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">See Details</a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
