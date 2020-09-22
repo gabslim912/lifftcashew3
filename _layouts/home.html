@@ -5,11 +5,11 @@ layout: default
     <!-- Section: home -->
     <section id="home" class=" layer-overlay overlay-dark-6">
       <div class="container-fluid p-0">
-        <div class="bg-video">
+        <!--<div class="bg-video">
           <div id="home-video" class="video">
             <div class="player video-container" data-property="{videoURL:'tBfuHPsxjjE',containment:'#home-video',autoPlay:true, showControls:true, mute:false, volume:3, startAt:10, duration:10, opacity:1}"></div>
           </div>
-        </div>
+        </div>-->
         
         <!-- Slider Revolution Start -->
         <div class="rev_slider_wrapper">
@@ -18,6 +18,9 @@ layout: default
 
               <!-- SLIDE 1 -->
               <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://placehold.it/1920x1280" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+
+                <!-- MAIN IMAGE -->
+                <img src="/assets/img/cashew_141.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 
                 <!-- LAYERS -->
 
@@ -123,6 +126,10 @@ layout: default
 
               <!-- SLIDE 2 -->
               <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://placehold.it/1920x1280" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+
+                <!-- MAIN IMAGE -->
+                <img src="/assets/img/cashew_27.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                
                 
                 <!-- LAYERS -->
 
@@ -227,6 +234,9 @@ layout: default
 
               <!-- SLIDE 3 -->
               <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://placehold.it/1920x1280" data-rotate="0" data-saveperformance="off" data-title="Slide 3" data-description="">
+                
+                <!-- MAIN IMAGE -->
+                <img src="/assets/img/cashew_2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 
                 <!-- LAYERS -->
 
@@ -476,67 +486,53 @@ layout: default
       </div>
     </section>
 
-    <!-- Section: About -->
-    <section>
-      <div class="container pb-50 pb-sm-60">
+    <!-- Section: blog -->
+    <section id="blog">
+      <div class="container pb-30">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+              <h2 class="mt-0 line-height-1 text-center text-uppercase font-28">Latest <span class="text-theme-colored font-weight-400">News</span></h2>
+              
+            </div>
+          </div>
+        </div>
         <div class="section-content">
           <div class="row">
-            
-            <div class="col-md-6">
-              
-              <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                  <div class="image-box-thum">
-                    <img src="/assets/img/cashew_26.jpg" alt="">
+            {% for post in site.posts limit:3 %}
+            <div class="col-sm-4 col-md-4 col-lg-4" style="visibility: visible;">
+              <article class="post clearfix maxwidth600 bg-lightest mb-30">
+                <div class="entry-header">
+                  <div class="post-thumb thumb" style="width: 360px; height: 240px;"> <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive img-fullwidth" > </div>
+                  <div class="entry-meta meta-absolute text-center p-15">
+                  <div class="display-table">
+                    <div class="display-table-cell">
+                      <ul>
+                        <li><a href="#">{{ post.date | date: "%b"}}</a></li>
+                        <li><a href="#">{{ post.date | date: "%d"}}</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="image-box-details text-center p-20 pt-30 pb-30 bg-lighter">
-                    <h3 class="title mt-0">LIFFT CASHEW PROJECT</h3>
-                    <p class="desc mb-10">The Linking Infrastructure, Finance, and Farms to Cashew (LIFFT-Cashew) is a sub-regional project designed to create a more integrated and durable regional network in the Senegal, The Gambia, and Guinea-Bissau cashew production zone (SeGaBi Zone).  We want to enhance the cultivation of cashews and the processing, and selling of cashew products in the local and international markets.</p>
-                    <a href="/about.html" class="btn btn-colored btn-theme-colored">Read More</a>
                   </div>
                 </div>
-              </div>
+                <div class="entry-content border-1px p-20">
+                  <h3 class="entry-title mt-0 pt-0"><a href="#">{{ post.title }}</a></h3>
+                  <ul class="list-inline entry-date font-12 mt-5">
+                    <li><i class="fa fa-clock-o mr-5"></i> {{ post.author }} </li>
+                    <li><i class="fa fa-map-marker mr-5"></i> {{ post.location_t }}, {{ post.location_c }} </li>
+                  </ul>
+                  <p class="mb-20 mt-15 font-13">{{ post.content | slice: 0, 100 }}...</p>
+                  <a class="mt-0 text-theme-colored" href="{{ post.url }}">Read more <i class="fa fa-angle-double-right"></i></a>
+                </div>
+              </article>
             </div>
-            <div class="col-md-6">
-              <h2 class="mt-0 line-height-1 mt-sm-20 line-bottom"><span class="font-weight-300">Get</span> Involved</h2>
-              <div class="icon-box p-20 pt-10 pb-10 bg-light">
-                <div class="mb-30">
-                  <a href="#" class="pull-left mr-20">
-                    <strong><i class="pe-7s-way text-theme-colored" style="font-size: 85px;"></i></strong>
-                  </a>
-                  <a> <h1 class="mt-10">Become  a<strong><span style="font-size: 46px;"> partner</span></strong></h1></a>
-                </div>
-                <div>
-                  <p class="text-gray text-justify">Lorem ipsum dolor sit ametcon ipsum dolor sitsectetu radipisicing elit. Mollitia quasi quinven tore, cumque nulla <a class="font-13" href="page-about1.html">read more...</a></p>
-                </div>
-              </div>
-              <div class="icon-box p-20 pt-10 pb-10 bg-light">
-                <div class="mb-30">
-                  <a href="#" class="pull-left mr-20">
-                    <i class="pe-7s-users text-theme-colored" style="font-size: 65px;"></i>
-                  </a>
-                  <a> <h1 class="mt-10">Become a<strong><span style="font-size: 35px;"> Volunteer</span></strong></h1></a>
-                </div>
-                <div>
-                  <p class="text-gray text-justify">Lorem ipsum dolor sit ametcon ipsum dolor sitsectetu radipisicing elit. Mollitia quasi quinven tore, cumque nulla consec. Mollitia quasi quinven tore, cumque <a class="font-13" href="page-about1.html">read more...</a></p>
-                </div>
-              </div>
-              <div class="icon-box p-20 pt-10 pb-10 mb-0 bg-light">
-                <div class="mb-30">
-                  <a href="#" class="pull-left mr-20">
-                    <i class="pe-7s-wallet text-theme-colored"></i>
-                  </a>
-                  <a> <h1 class="mt-10">Join <strong>the project</strong></h1></a>
-                </div>
-                <div>
-                  <p class="text-gray text-justify">Lorem ipsum dolor sit ametcon ipsum dolor sitsectetu radipisicing elit. Mollitia quasi quinven tore, cumque nulla consec. Mollitia quasi quinven tore, cumque <a class="font-13" href="page-about1.html">read more...</a></p>
-                </div>
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
     </section>
+
+    
 
     <!-- Section: Divider -->
     <section class="divider parallax layer-overlay overlay-dark-7" data-bg-img="/assets/img/cashew_141.jpg">
@@ -752,51 +748,69 @@ layout: default
         </div>
       </div>
     </section>
-    <!-- Section: blog -->
-    <section id="blog">
-      <div class="container pb-30">
-        <div class="section-title text-center">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-              <h2 class="mt-0 line-height-1 text-center text-uppercase font-28">Latest <span class="text-theme-colored font-weight-400">News</span></h2>
-              
-            </div>
-          </div>
-        </div>
+
+    <!-- Section: About -->
+    <section>
+      <div class="container pb-50 pb-sm-60">
         <div class="section-content">
           <div class="row">
-            {% for post in site.posts limit:3 %}
-            <div class="col-sm-4 col-md-4 col-lg-4" style="visibility: visible;">
-              <article class="post clearfix maxwidth600 bg-lightest mb-30">
-                <div class="entry-header">
-                  <div class="post-thumb thumb" style="width: 360px; height: 240px;"> <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive img-fullwidth" > </div>
-                  <div class="entry-meta meta-absolute text-center p-15">
-                  <div class="display-table">
-                    <div class="display-table-cell">
-                      <ul>
-                        <li><a href="#">{{ post.date | date: "%b"}}</a></li>
-                        <li><a href="#">{{ post.date | date: "%d"}}</a></li>
-                      </ul>
-                    </div>
+            
+            <div class="col-md-6">
+              
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="image-box-thum">
+                    <img src="/assets/img/cashew_26.jpg" alt="">
                   </div>
+                  <div class="image-box-details text-center p-20 pt-30 pb-30 bg-lighter">
+                    <h3 class="title mt-0">LIFFT CASHEW PROJECT</h3>
+                    <p class="desc mb-10">The Linking Infrastructure, Finance, and Farms to Cashew (LIFFT-Cashew) is a sub-regional project designed to create a more integrated and durable regional network in the Senegal, The Gambia, and Guinea-Bissau cashew production zone (SeGaBi Zone).  We want to enhance the cultivation of cashews and the processing, and selling of cashew products in the local and international markets.</p>
+                    <a href="/about.html" class="btn btn-colored btn-theme-colored">Read More</a>
                   </div>
                 </div>
-                <div class="entry-content border-1px p-20">
-                  <h3 class="entry-title mt-0 pt-0"><a href="#">{{ post.title }}</a></h3>
-                  <ul class="list-inline entry-date font-12 mt-5">
-                    <li><i class="fa fa-clock-o mr-5"></i> {{ post.author }} </li>
-                    <li><i class="fa fa-map-marker mr-5"></i> {{ post.location_t }}, {{ post.location_c }} </li>
-                  </ul>
-                  <p class="mb-20 mt-15 font-13">{{ post.content | slice: 0, 110 }}...</p>
-                  <a class="mt-0 text-theme-colored" href="{{ post.url }}">Read more <i class="fa fa-angle-double-right"></i></a>
-                </div>
-              </article>
+              </div>
             </div>
-            {% endfor %}
+            <div class="col-md-6">
+              <h2 class="mt-0 line-height-1 mt-sm-20 line-bottom"><span class="font-weight-300">Get</span> Involved</h2>
+              <div class="icon-box p-20 pt-10 pb-10 bg-light">
+                <div class="mb-30">
+                  <a href="#" class="pull-left mr-20">
+                    <strong><i class="pe-7s-way text-theme-colored" style="font-size: 85px;"></i></strong>
+                  </a>
+                  <a> <h1 class="mt-10">Become  a<strong><span style="font-size: 46px;"> partner</span></strong></h1></a>
+                </div>
+                <div>
+                  <p class="text-gray text-justify">Lorem ipsum dolor sit ametcon ipsum dolor sitsectetu radipisicing elit. Mollitia quasi quinven tore, cumque nulla <a class="font-13" href="page-about1.html">read more...</a></p>
+                </div>
+              </div>
+              <div class="icon-box p-20 pt-10 pb-10 bg-light">
+                <div class="mb-30">
+                  <a href="#" class="pull-left mr-20">
+                    <i class="pe-7s-users text-theme-colored" style="font-size: 65px;"></i>
+                  </a>
+                  <a> <h1 class="mt-10">Become a<strong><span style="font-size: 35px;"> Volunteer</span></strong></h1></a>
+                </div>
+                <div>
+                  <p class="text-gray text-justify">Lorem ipsum dolor sit ametcon ipsum dolor sitsectetu radipisicing elit. Mollitia quasi quinven tore, cumque nulla consec. Mollitia quasi quinven tore, cumque <a class="font-13" href="page-about1.html">read more...</a></p>
+                </div>
+              </div>
+              <div class="icon-box p-20 pt-10 pb-10 mb-0 bg-light">
+                <div class="mb-30">
+                  <a href="#" class="pull-left mr-20">
+                    <i class="pe-7s-wallet text-theme-colored"></i>
+                  </a>
+                  <a> <h1 class="mt-10">Join <strong>the project</strong></h1></a>
+                </div>
+                <div>
+                  <p class="text-gray text-justify">Lorem ipsum dolor sit ametcon ipsum dolor sitsectetu radipisicing elit. Mollitia quasi quinven tore, cumque nulla consec. Mollitia quasi quinven tore, cumque <a class="font-13" href="page-about1.html">read more...</a></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    
    
     <!-- Divider: testimonials -->
     <section class="divider parallax layer-overlay overlay-dark-9" data-bg-img="/assets/img/cashew_141.jpg" data-parallax-ratio="0.2">
