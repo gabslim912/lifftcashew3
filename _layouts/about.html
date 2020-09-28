@@ -17,7 +17,7 @@ layout: default
 	          </div>
 	          <div class="col-md-6">
 	            <div class="card effect__hover">
-	              <div class="card__front layer-overlay overlay-orange " data-bg-img="/assets/img/cashew_2.jpg">
+	              <div class="card__front layer-overlay overlay-grey" data-bg-img="/assets/img/cashew_2.jpg">
 	                  <div class="card__text">
 	                    <div class="display-table-parent">
 	                      <div class="display-table">
@@ -83,7 +83,7 @@ layout: default
 	          </div>
 	          <div class="col-md-12" style="margin-top: 30px;">
 	            <div class="card effect__hover">
-	              <div class="card__front layer-overlay overlay-brown"  data-bg-img="/assets/img/cashew_141.jpg">
+	              <div class="card__front layer-overlay overlay-orange"  data-bg-img="/assets/img/cashew_141.jpg">
 	                  <div class="card__text">
 	                    <div class="display-table-parent">
 	                      <div class="display-table">
@@ -139,7 +139,7 @@ layout: default
       <div class="container pb-30">
       	<div class="title-separator mb-60">
 	        <span class="text-uppercase font-36"> OUR TEAM</span>
-		</div>
+		  </div>
         <div class="section-content">
           <div class="row">
             <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
@@ -337,48 +337,48 @@ layout: default
         </div>
       </div>
     </section>
-    <!-- Section:  -->
+    <!-- Section: Events and stories -->
     <section>
       <div class="container pb-40 pb-sm-60">
         <div class="section-content">
           <div class="row">
-            <div class="col-md-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
               <h3 class="mt-0 line-bottom"><span class="font-weight-300">Upcoming </span> Events</h3>
               {% for event in site.events %}
               <div class="event media mb-20 no-bg no-border">
                 <div class="event-date media-left text-center flip bg-theme-colored p-20">
                   <ul>
-                    <li class="font-30 text-white font-weight-600 border-bottom pb-10">{{ event.date | date: "%d" }}</li>
-                    <li class="font-22 text-white text-uppercase">{{ event.date | date: "%b" }}</li>
+                    <li class="font-30 text-white font-weight-600 border-bottom pb-10">{{ event.start_date | date: "%d" }}</li>
+                    <li class="font-22 text-white text-uppercase">{{ event.start_date | date: "%b" }}</li>
                   </ul>
                 </div>
                 <div class="media-body pl-20">
                   <div class="event-content pull-left flip">
-                    <h4 class="event-title media-heading font-raleway font-weight-700"><a href="#">{{ event.title }}</a></h4>
-                    <span class="mb-10 text-gray-darkgray mr-10"><i class="fa fa-clock-o mr-5 text-theme-colored"></i> at 5.00 pm - 7.30 pm</span>
-                    <span class="text-gray-darkgray"><i class="fa fa-map-marker mr-5"></i> {{ event.location_address }}, {{ event.location_town }}, {{ event.location_region }}, {{ event.location_country }}</span>
-                    <p class="mt-5" style="text-align: justify;">{{ event.content | slice: 0, 240 }}...</p>
+                    <h4 class="event-title media-heading font-raleway font-weight-700" style="font-size: 16px;"><a href="{{ event.title }}">{{ event.title }}</a></h4>
+                    <span class="mb-10 text-gray-darkgray mr-10" style="font-size: 14px;"><i class="fa fa-clock-o mr-5 text-theme-colored"></i> at 5.00 pm - 7.30 pm</span>
+                    <span class="text-gray-darkgray" style="font-size: 14px;"><i class="fa fa-map-marker mr-5"></i> {{ event.location_address }}, {{ event.location_town }}, {{ event.location_region }}, {{ event.location_country }}</span>
+                    <!--<p class="mt-5" style="font-size: 14px; text-align: justify;" >{{ event.content | slice: 0, 80 }}...</p>-->
                   </div>
                 </div>
               </div>
               {% endfor %}
             </div>
-            <div class="col-md-7 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="owl-carousel-1col owl-dots-bottom-right" data-dots="true">
                 {% for story in site.stories %}
                 <div class="item">
                   <div class="row-fluid">
                     <div class="col-md-12 ">
-                      <img src="{{ story.image }}" alt="{{ story.title }}" style="height: 450px;">
+                      <img src="{{ story.image }}" alt="{{ story.title }}" style="width: 530px; height: 290px;" >
                     </div>
                     <div class="col-md-12">
                       <h4 class="mb-0 text-black-666">Featured Stories:</h4>
                       <h2 class="line-bottom mt-0">{{ story.title }}</h2>
-                      <p class="text-justify" >{{ story.content | slice: 0, 300 }}...</p>
+                      <!--<p class="text-justify" >{{ story.content | slice: 0, 300 }}...</p>-->
                       <div class="mt-10 mb-20">
                         <ul class="list-inline clearfix mt-10">
                           <li class="pull-left flip pr-0">Date: <span class="font-weight-700 font-">{{story.date | date: "%b %d, %y"}} </span></li>
-                          <li class="text-theme-colored pull-right flip pr-0">Location: <span class="font-weight-700">{ story.location }}</span></li>
+                          <li class="text-theme-colored pull-right flip pr-0">Location: <span class="font-weight-700">{{ story.location }}</span></li>
                         </ul>
                       </div>
                       <a class="btn btn-theme-colored btn-sm" href="{{ story.url }}">Read {{ story.first_name }} {{ story.last_name }} story</a>
@@ -392,6 +392,5 @@ layout: default
         </div>
       </div>
     </section>
-    
 </div>
 <!-- end main-content -->

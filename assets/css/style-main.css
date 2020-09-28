@@ -910,6 +910,9 @@ section > .container-fluid {
 .layer-overlay.overlay-brown::before {
   background-color: rgba(60, 171, 111, 0.9);
 }
+.layer-overlay.overlay-orange::before {
+  background-color: rgba(231, 122, 57, 0.7);
+}
 .layer-overlay.overlay-brown-light::before {
   background-color: rgba(60, 171, 111, 0.45);
 }
@@ -1015,8 +1018,8 @@ section > .container-fluid {
 }
 /* -------- Menuzord ---------- */
 .menuzord-menu > li > a {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
 }
 .menuzord .menuzord-menu > li.active > a i,
 .menuzord .menuzord-menu > li:hover > a i,
