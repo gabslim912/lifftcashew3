@@ -1,9 +1,9 @@
 ---
-title: Who are the main contributors of the Lifft Cashew Project?
-answer: LIFFT-Cashew is currently being implemented by Shelter For Life International
-  in the Senegal, the Gambia, and Guinea-Bissau cashew production zone (SeGaBi Zone).The
-  $38 million project, implemented in partnership with Connexus Corporation, is funded
-  by the United States Department of Agriculture
+title: What is Shelter For Life International?
+answer: "Shelter For Life (SFL) International is a non-profit relief and development
+  organization with headquarters in Minnesota (United States of America), with over
+  30 years of experience and extensive history in infrastructure, agriculture development,
+  food security, and enterprise development. \n"
 number: 5
 
 ---
