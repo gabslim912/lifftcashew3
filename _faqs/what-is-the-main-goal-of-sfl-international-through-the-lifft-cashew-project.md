@@ -1,8 +1,6 @@
 ---
-title: What is the main goal of SFL International through the Lifft Cashew Project?
-answer: Through the LIFFT-Cashew program, SFL wants to contribute to the increase
-  of production and bargaining power of small farmers, by providing capacity building,
-  networking, and support to various local trade associations
+title: What is the duration of the project?
+answer: The project covers a period of six (6) years, from 2017 to 2023.
 number: 3
 
 ---
