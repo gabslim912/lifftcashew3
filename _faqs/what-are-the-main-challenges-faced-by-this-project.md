@@ -1,9 +1,7 @@
 ---
-title: What are the main challenges faced by this project?
-answer: 'Many challenges faced by the cashew value chain in SeGaBi: poor access to
-  finance, poor infrastructure, limited investment in research and development, limited
-  application of best practices, high dependency on RCN exports, and an absence of
-  established market information systems.'
+title: How can I stay informed about the project?
+answer: You can find updates here and follow us on our different social media platforms.
+  You can also contact our team at lifftcashewinfo@shelter.org.
 number: 1
 
 ---
