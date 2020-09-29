@@ -1,7 +1,8 @@
 ---
-title: Which regions are concern by this project?
-answer: The Lifft cashew project operate in the SeGaBi area which is the meaning for
-  Senegal, Gambia and Bissau.
+title: Why is the project implemented only in Senegal, The Gambia, and Guinea-Bissau?
+answer: We have focused our intervention area to a cashew production zone, called
+  SeGaBi (Senegal, The Gambia, and Guinea-Bissau), which stretches from Ziguinchor
+  through The Gambia into Guinea-Bissau.
 number: 4
 
 ---
