@@ -23,7 +23,7 @@ Laurent Gomis, Chief of Party, Mrs. Elisabete Dumbia, Deputy Chief of Party, Má
 
 Laurent Gomis thanked the government of Guinea-Bissau for its effort to organize this first meeting, since Guinea-Bissau was the first country to put this structure in place, due to Covid-19 restrictions in Senegal and The Gambia. He also pointed out that the project LIFFT-Cashew belongs to all the three countries, that is way they need to take ownership of it to be well succeeded.
 
-The chair of the steering committee, Mr. Issa Jandi, Director General of Planning, Ministry of Economy and Regional Integration, said that the purpose of the structure is to promote ownership of the project and support its implementation in Guinea-Bissau. Mr. Jandi added that the steering committee is anchored in the office of the Ministry of Economy, Planning, and Regional Integration due to the multisectoral nature of LIFFT-Cashew.
+The chair of the steering committee, Mr. Issa Jandi, Director General of Planning, Ministry of Economy and Regional Integration, said that the purpose of the structure is to promote ownership of the project and support its implementation in Guinea-Bissau. Mr. Jandi added that the steering committee is anchored in the office of the Ministry of Economy, Planning, and Regional Integration due to the multisectorial nature of LIFFT-Cashew.
 
 During the meeting, Shelter For Life had the opportunity to report on the progress made in the country since 2017, and to hear the feedback of the steering committee members.
 
