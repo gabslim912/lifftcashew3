@@ -78,9 +78,9 @@ layout: default
 	                    <div class="form-group">
 	                      <label>Job Post <small>*</small></label>
 	                      <select name="form_post" class="form-control required">
-	                        <option value="Finance Manager">Finance Manager</option>
-	                        <option value="Area Manager">Area Manager</option>
-	                        <option value="Country Manager">Country Manager</option>
+	                      	{% for job in site.jobs %}
+	                        <option value="{{ job.title }}">{{ job.title }}</option>
+	                        {% endfor %}
 	                      </select>
 	                    </div>
 	                  </div>
