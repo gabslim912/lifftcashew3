@@ -1031,6 +1031,7 @@ section > .container-fluid {
 }
 .menuzord-menu ul.dropdown li a {
   padding: 7px 25px 7px 22px;
+  font-size: 16px;
 }
 .menuzord-menu ul.dropdown li .indicator {
   top: 4px;

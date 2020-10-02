@@ -42,9 +42,13 @@ collections:
     title: indicators
     output: true
 email: lifftcashewinfo@shelter.org
-tel1: + 221 33 845 74 56
+tel1: (+221) 33 991 94 55
 tel2: + 221 33 823 44 45
-adress: 178 Nema Complementaire, Ziguinchor, Senegal
+telgb: (+245) 95 663 74 13
+telgm: (+220) 353 53 86
+sn_address: 178 Nema Complementaire, Ziguinchor
+gb_address: Rua Lamine Indjai na Cidade de Bissau
+gm_address: Kotu East, KMC, The Gambia
 logo_white: "/assets/img/logo_white_2.png"
 logo_white2: "/assets/img/logo_white2.png"
 logo_dark: "/assets/images/logo_dark.png"
