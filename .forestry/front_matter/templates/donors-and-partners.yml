@@ -72,5 +72,6 @@ fields:
       format: markdown
   label: Donor or partner contribution
 pages:
+- _donors/connexus-corporation.md
 - _donors/shelter-for-life-international.md
 - _donors/usda.md
