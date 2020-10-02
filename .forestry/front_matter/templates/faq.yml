@@ -16,6 +16,44 @@ fields:
     schema:
       format: markdown
   label: Answer
+- name: number
+  type: number
+  label: Position
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: class
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - active
+    - collapsed
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Class
+- name: expanded
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - 'true'
+    - 'false'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Expanded
 pages:
 - _faqs/what-are-the-main-challenges-faced-by-this-project.md
 - _faqs/what-is-the-lifft-cashew-project.md
