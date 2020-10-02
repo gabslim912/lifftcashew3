@@ -11,10 +11,7 @@ donor_or_partner_biography: Since 2007, Connexus has built upon the financial an
   management networks and expertise of its founder Anita Campion. Today Connexus has
   a robust financial services practice, expanding access to financial services ranging
   from strengthening financial institutions that offer micro, small and medium enterprise
-  finance, to structuring and vetting large equity investments. Connexus offers a
-  holistic, market-based approach to financial services, combining innovative financing
-  models, pipeline development, and ready markets to reinforce investments in emerging
-  markets around the globe.
+  finance, to structuring and vetting large equity investments.
 donor_or_partner_contribution: As part of the USDA Food for Progress project Linking
   Infrastructure, Finance and Farms to Cashew (LIFFT Cashew), Connexus is playing
   a leading role in facilitating access to agricultural finance, investment, and marketing
