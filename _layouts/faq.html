@@ -4,23 +4,51 @@ layout: default
 <!-- Start main-content -->
   <div class="main-content">
     <!-- Section: inner-header -->
-    {% include heading.html %}
+    <section class="inner-header divider parallax layer-overlay overlay-white-8" data-bg-img="http://placehold.it/1920x1280">
+      <div class="container pt-60 pb-60">
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="title">{{ page.title }}</h2>
+              <ol class="breadcrumb text-center text-black mt-10">
+                <li><a href="#">Home</a></li>
+                <li class="active text-theme-colored">{{ page.title }}</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <div id="accordion1" class="panel-group accordion">
-            	{% for faq in site.faqs %}
+              {% assign faqs = site.faqs | sort: "number" %}
+              {% for faq in faqs %}
+              {% if faq.number == 1 %}
+
 	            <div class="panel">
-	                <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion1{{ faq.number }}" class="active" aria-expanded="false"> <span class="open-sub"></span> <strong>Q. {{ faq.title }}</strong></a> </div>
-	                <div id="accordion11" class="panel-collapse collapse in" role="tablist" aria-expanded="false">
+	                <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion1{{ faq.number }}" class="{{ faq.class }}" aria-expanded="{{ faq.expanded }}"> <span class="open-sub"></span> <strong>Q. {{ faq.title }}</strong></a> </div>
+	                <div id="accordion1{{ faq.number }}" class="panel-collapse collapse in" role="tablist" aria-expanded="{{ faq.expanded }}">
 	                  <div class="panel-content">
 	                    <p>{{ faq.answer }}</p>
 	                  </div>
 	                </div>
 	            </div>
-                {% endfor %}
+              {% else %}
+              <div class="panel">
+                  <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion1{{ faq.number }}" class="{{ faq.class }}" aria-expanded="{{ faq.expanded }}"> <span class="open-sub"></span> <strong>Q. {{ faq.title }}</strong></a> </div>
+                  <div id="accordion1{{ faq.number }}" class="panel-collapse collapse" role="tablist" aria-expanded="{{ faq.expanded }}">
+                    <div class="panel-content">
+                      <p>{{ faq.answer }}</p>
+                    </div>
+                  </div>
+              </div>
+              {% endif %}
+              {% endfor %}
             </div>
           </div>
         </div>
