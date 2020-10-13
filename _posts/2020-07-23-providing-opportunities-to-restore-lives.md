@@ -12,7 +12,6 @@ tags:
 - cashew
 - lifft cashew
 - cooperative
-- " capacity building"
 publication_date: 09/06/2020 1:06
 image: "/uploads/kcfa-coops-training.jpg"
 

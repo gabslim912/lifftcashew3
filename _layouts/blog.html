@@ -4,7 +4,22 @@ layout: default
 <!-- Start main-content -->
 <div class="main-content">
     <!-- Section: inner-header -->
-    {% include heading.html %}
+    <section class="inner-header divider parallax layer-overlay overlay-white-8" data-bg-img="http://placehold.it/1920x1280">
+    <div class="container pt-60 pb-60">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="title">{{ page.title }}</h2>
+            <ol class="breadcrumb text-center text-black mt-10">
+              <li><a href="#">Home</a></li>
+              <li class="active text-theme-colored">{{ page.title }}</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <!-- Section: Blog -->
     <section>
       <div class="container mt-30 mb-30 pt-30 pb-0">
