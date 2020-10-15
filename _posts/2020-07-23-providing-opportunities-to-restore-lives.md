@@ -12,7 +12,7 @@ tags:
 - cashew
 - lifft cashew
 - cooperative
-publication_date: 10/08/2020 11:00
+publication_date: 2010-08-04 11:00:00 +0000
 image: "/uploads/kcfa-coops-training.jpg"
 
 ---
