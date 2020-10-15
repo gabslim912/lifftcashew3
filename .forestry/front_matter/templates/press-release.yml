@@ -1,4 +1,116 @@
 ---
 label: Press release
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: press
+- name: lang
+  type: select
+  default: Eng
+  config:
+    required: false
+    options:
+    - Eng
+    - Por
+    - Fr
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Language
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+  default: Admin
+- name: location_t
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Ziguinchor
+    - Kotu
+    - Bissau
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location - Town
+- name: location_r
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Senegambia
+    - Bissau
+    - Casamance
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location - Region
+- name: location_c
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Senegal
+    - Gambia
+    - Guinee-Bissau
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Location - Country
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subtitle
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: publication_date
+  type: datetime
+  label: Publication date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: MM/DD/YYYY h:mm
+  default: now
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: file
+  type: file
+  config:
+    maxSize: 64
+  label: File
