@@ -19,7 +19,6 @@ subtitle: |-
   expectations in the cashew market in Senegal, The Gambia, and Guinea-Bissau
 image: "/uploads/story_3.jpg"
 file: "/uploads/sfl-press-release-online-forum.pdf"
-published: false
 
 ---
 **Ziguinchor, June 29, 2020 -** With cashew nut exports expected to start in the coming month, Shelter For Life International presents the main conclusions and recommendations of a online forum on the cashew market in the production zone of Senegal, Gambia, and Guinea-Bissau (SeGaBi). 
