@@ -5,6 +5,8 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: heading
+  label: Add Press Releases & Publications here
+- type: heading
   label: Add indicators here
 - type: directory
   path: _indicators
