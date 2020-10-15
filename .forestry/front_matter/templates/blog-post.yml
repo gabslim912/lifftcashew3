@@ -77,13 +77,14 @@ fields:
   label: Location Country
 - name: categories
   type: select
-  default: []
+  default: ''
   config:
     required: false
     options:
     - Cashew
     - Government
     - Project
+    - Others
     source:
       type: simple
       section: 
@@ -116,8 +117,8 @@ fields:
   description: ''
   config:
     required: true
-    date_format: MM/DD/YYYY
-    time_format: h:mm
+    date_format: ''
+    time_format: ''
     display_utc: false
     export_format: MM/DD/YYYY h:mm
   label: Publication date
