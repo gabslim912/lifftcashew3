@@ -15,6 +15,20 @@ sections:
   - indicator
 - type: heading
   label: Add Press Releases & Publications here
+- type: directory
+  path: _preleases
+  label: Press releases
+  create: all
+  match: "**/*"
+  templates:
+  - press-release
+- type: directory
+  path: _publications
+  label: Publications
+  create: all
+  match: "**/*"
+  templates:
+  - publication
 - type: heading
   label: Add News, Events & Success stories here
 - type: directory
