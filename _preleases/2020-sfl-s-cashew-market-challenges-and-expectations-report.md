@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: prelease
 lang: Eng
 author: Admin
 location_t: Ziguinchor

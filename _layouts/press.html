@@ -46,15 +46,9 @@ layout: default
                               </div>
                             </div>
                           </div>
-                          <h2 class="entry-title">{{ prelease.title }}</h2>
-                        <div class="entry-content">
-                          <p class="mb-30">{{ prelease.subtitle }}<a href="{{ prelease.url }}">[...]</a></p>
-                          <ul class="list-inline like-comment pull-left font-12">
-                            <li><i class="pe-7s-comment"></i>36</li>
-                            <li><i class="pe-7s-like2"></i>125</li>
-                          </ul>
-                          <a class="pull-right text-gray font-13" href="{{ prelease.url }}"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
-                        </div>
+                          <a href="{{ prelease.url }}"><h2 class="entry-title text-uppercase m-0 mt-5">{{ prelease.title }}</h2></a>
+                          
+                          <a href="{{ prelease.url }}" class="btn-read-more">Read more</a>
                       </article>
                     </div>
                 </li>
