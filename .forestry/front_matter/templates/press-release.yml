@@ -114,3 +114,5 @@ fields:
   config:
     maxSize: 64
   label: File
+pages:
+- _preleases/2020-sfl-s-cashew-market-challenges-and-expectations-report.md
