@@ -1,0 +1,369 @@
+/*********Invitation Modal*********/
+
+#mcxHeading,
+#mcxText1 {
+    font-family: 'Proxima Nova Rg', Arial, sans-serif;
+}
+
+#mcxInfo2 {
+    width: 400px;
+    padding: 0px 0px 20px 0px;
+    background-color: rgb(255, 255, 255);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#mcxLogos {
+    padding-top: 20px;
+    background: transparent;
+}
+
+#mcxLogos img {
+    width: 70%;
+    height: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#mcxText1 {
+    width: 90%;
+    font-size: 14px;
+    color: #505050;
+    text-align: center;
+    line-height: 20px;
+    margin: 2% auto 3% auto;
+}
+
+#mcxHeading {
+    margin: 3% auto 2% auto;
+    max-width: 84%;
+    font-size: 18px;
+    color: #FF8000;
+    text-align: center;
+    width: 100%;
+}
+
+#mcxYesButton {
+    background: #FF8000;
+    border: 1px solid #FF8000;
+    padding: 15px 40px;
+    margin: 2% auto 2% auto;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+#mcxYesButton button {
+    color: #ffffff;
+}
+
+#mcxYes,
+#mcxYes:hover,
+#mcxYes:active {
+    background: none;
+    border: 0px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 0px;
+    font-family: Arial, "sans-serif";
+}
+
+#mcxNoButton {
+    height: 15px;
+    position: absolute;
+    right: 0px;
+}
+
+#mcxNo,
+#mcxNo:hover,
+#mcxNo:active {
+    background: none;
+    border: 0px;
+    float: right;
+    background-size: 15px auto;
+    padding: 3px 30px 0px 0px;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    color: #FF8000;
+}
+
+#mcxYes:hover,
+#mcxYesButton:hover,
+#mcxNo:hover {
+    cursor: pointer;
+}
+
+#mcxInvitationModal {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    text-align: center;
+    border: 0;
+    font-size: 100%!important;
+    font: inherit;
+    vertical-align: baseline;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif!important;
+    text-indent: 0;
+    float: none!important;
+    text-shadow: none;
+}
+
+#mcxFloating {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -200px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width :815px) {
+    #mcxFloating {
+        left: 47%
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    #mcxInvitationModal {
+        background: rgba(0, 0, 0, .3);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
+    #mcxInfo2 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        max-width: 300px;
+        height: 260px;
+        margin-top: -200px;
+        /*set to a negative number 1/2 of your height*/
+        margin-left: -150px;
+        /*set to a negative number 1/2 of your width*/
+        border: 1px solid #ccc;
+        background-color: #ffffff;
+        -webkit-box-shadow: 5px -2px 5px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 5px -2px 5px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 5px -2px 5px 0px rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+    #mcxLogos {
+        padding-top: 22px;
+        width: 100%;
+        height: auto;
+    }
+    #mcxLogos img {
+        width: 70%;
+        height: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #mcxText1 {
+        width: 100%;
+        margin: 5% auto 5% auto;
+    }
+    #mcxHeading {
+        max-width: 100%;
+    }
+    #mcxYes,
+    #mcxYes:hover,
+    #mcxYes:active {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        padding: 10px 0px;
+    }
+    #mcxYesButton {
+        padding: 0px;
+        margin: 5% auto 2% auto;
+        width: 205px;
+    }
+}
+
+
+/*********Survey Modal*********/
+
+#mcxSurveyDialog {
+    position: fixed;
+    z-index: 1051;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5)
+}
+
+#mcxSurveyWrapper {
+    position: fixed;
+    top: 15%;
+    left: 33%;
+    padding: 0;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 -1px 14px 0 rgba(207, 207, 207, .5);
+    -moz-box-shadow: 0 -1px 14px 0 rgba(207, 207, 207, .5);
+    box-shadow: 0 -1px 14px 0 rgba(207, 207, 207, .5);
+    width: 550px;
+    height: 75%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+#mcxSurveyClose {
+    width: 20px;
+    text-align: center;
+    padding: 10px 0;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #005b82;
+    cursor: pointer;
+    float: right;
+    right: 20px;
+    background-image: url('https://siteintercept.allegiancetech.com/dist/tr1si001/images/closeorange.png');
+    background-size: 100%;
+    margin-top: 8px
+}
+
+#mcxSurveyWrapper iframe {
+    float: left;
+    width: 100%;
+    height: 95%
+}
+
+@media only screen and (min-device-width :900px) and (max-device-width :1024px) {
+    #mcxSurveyWrapper {
+        position: unset;
+        margin: 5% auto;
+        Left: 25%;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+        overflow: auto!important
+    }
+}
+
+@media only screen and (min-device-width :768px) and (max-device-width :900px) {
+    #mcxSurveyWrapper {
+        position: unset;
+        margin: 5% auto;
+        Left: 17%;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+        overflow: auto!important
+    }
+}
+
+@media only screen and (max-width :815px) {
+    #mcxSurveyWrapper {
+        left: 16%
+    }
+}
+
+@media only screen and (max-width :570px) {
+    #mcxSurveyWrapper {
+        left: 2%
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    #mcxSurveyWrapper {
+        width: 320px!important;
+        margin-top: 0%;
+        top: 0;
+        margin-left: 15px;
+        top: 0%;
+        left: 3%;
+        padding: 3px;
+        height: 100%!important
+    }
+    #mcxSurveyWrapper iframe {
+        float: left;
+        width: 100%;
+        height: 300px!important
+    }
+    textarea {
+        width: 93%
+    }
+}
+
+@media only screen and (max-device-width: 414px) {
+    #mcxSurveyWrapper {
+        width: 380px!important;
+        margin-top: 0%;
+        margin-left: 17px;
+        top: 0%;
+        left: 6%;
+        padding: 3px
+    }
+    #mcxSurveyWrapper iframe {
+        float: left;
+        width: 100%;
+        height: 730px!important
+    }
+}
+
+@media only screen and (max-device-width: 375px) {
+    #mcxSurveyWrapper {
+        width: 370px!important;
+        margin-top: 0%;
+        margin-left: 2px;
+        top: 0%;
+        left: 6%;
+        padding: 3px
+    }
+    #mcxSurveyWrapper iframe {
+        float: left;
+        width: 100%;
+        height: 660px!important
+    }
+}
+
+@media only screen and (max-device-width: 320px) {
+    #mcxSurveyWrapper {
+        width: 320px!important;
+        margin-top: 0%;
+        margin-left: 0%;
+        top: 0%;
+        left: 6%;
+        padding: 3px
+    }
+    #mcxSurveyWrapper iframe {
+        float: left;
+        width: 100%;
+        height: 560px!important
+    }
+}

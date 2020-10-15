@@ -364,7 +364,7 @@ layout: default
                   data-splitin="none" 
                   data-splitout="none" 
                   data-responsive_offset="on"
-                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored pl-20 pr-20" href="#">Learn more</a> 
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored pl-20 pr-20" href="/volunteer.html">Learn more</a> 
                 </div>
               </li>
 
@@ -582,7 +582,7 @@ layout: default
                 Last Year: 200 MT
               </div>
             </div>
-            <a style="transition: none 0s ease 0s ; line-height: 16px; border-width: 0px; padding: 8px 20px; letter-spacing: 1px; font-weight: 400; font-size: 13px;" class="btn btn-default btn-circled btn-transparent pl-20 pr-20 bg-white text-black mt-30" href="#">More information</a>
+            <a style="transition: none 0s ease 0s ; line-height: 16px; border-width: 0px; padding: 8px 20px; letter-spacing: 1px; font-weight: 400; font-size: 13px;" class="btn btn-default btn-circled btn-transparent pl-20 pr-20 bg-white text-black mt-30" href="https://www.reuters.com/article/us-health-coronavirus-africa-cashew-idUSKBN23J15R">More information</a>
           </div>
         </div>
       </div>
@@ -621,18 +621,17 @@ layout: default
                 <div class="item">
                   <div class="row-fluid">
                     <div class="col-md-12 ">
-                      <img src="{{ story.image }}" alt="{{ story.title }}" style="width: 530px; height: 290px;" >
+                      <img src="{{ story.image }}" alt="{{ story.title }}" style="width: 540px; height: 290px; margin-bottom: 15px;" >
                     </div>
                     <div class="col-md-12">
-                      <h4 class="mb-0 text-black-666">Featured Stories:</h4>
-                      <h2 class="line-bottom mt-0">{{ story.title }}</h2>
-                      <!--<p class="text-justify" >{{ story.content | slice: 0, 300 }}...</p>-->
+                      <h2 class="line-bottom mt-0">Featured Stories: {{ story.title }}</h2>
+                      <!--<p class="text-justify" >{{ story.content | slice: 0, 300 }}...</p>
                       <div class="mt-10 mb-20">
-                        <ul class="list-inline clearfix mt-10">
+                        <ul class="list-inline clearfix">
                           <li class="pull-left flip pr-0">Date: <span class="font-weight-700 font-">{{story.date | date: "%b %d, %y"}} </span></li>
                           <li class="text-theme-colored pull-right flip pr-0">Location: <span class="font-weight-700">{{ story.location }}</span></li>
                         </ul>
-                      </div>
+                      </div>-->
                       <a class="btn btn-theme-colored btn-sm" href="{{ story.url }}">Read {{ story.first_name }} {{ story.last_name }} story</a>
                     </div>
                   </div>
