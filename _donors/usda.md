@@ -10,11 +10,14 @@ quote_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent f
 donor_or_partner_biography: USDA provide leadership on food, agriculture, natural
   resources, rural development, nutrition, and related issues based on public policy,
   the best available science, and effective management.
-donor_or_partner_contribution: 'Maecenas porttitor, lectus quis faucibus congue, arcu
-  purus venenatis nunc, a gravida ipsum eros eget nibh. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit. Curabitur suscipit elementum nibh, lacinia fermentum
-  diam tempor in. Mauris lacinia, neque mollis placerat pharetra, risus lacus finibus
-  neque, at malesuada urna neque sit amet lorem. Integer eleifend nunc vel massa laoreet
-  luctus. Fusce augue libero, volutpat sit amet commodo quis, commodo in mauris. '
+donor_or_partner_contribution: "LIFFT-Cashew-Linking Infrastructure, Finance and Farms
+  to Cashew, this is a 6-year program (2017-2023) funded by USDA to enhance the production
+  and trade of cashews in local and international markets.\nThe project works around
+  three objectives which are:\n• Production of RCN: Increase or maintain quality of
+  RCN outturn in 52-54 lbs;\n• Sales of RCN: Strengthen associations /cooperatives
+  and sale up to 50% of RCN produced\nthrough them by organizing collective sales;\n•
+  Processing of RCN: Increase processing of RCN to additional 30000 tons of RCN locally.\nThe
+  integration of the three governments (Senegal, The Gambia and Guinea Bissau) remains
+  one of the\nmajor priorities for the sustainability of the activities implemented. "
 
 ---
