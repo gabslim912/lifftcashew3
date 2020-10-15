@@ -120,7 +120,7 @@ fields:
     date_format: ''
     time_format: ''
     display_utc: false
-    export_format: MM/DD/YYYY h:mm
+    export_format: ''
   label: Publication date
   default: now
 - name: image
