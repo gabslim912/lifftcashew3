@@ -27,33 +27,26 @@ layout: default
           <div class="col-md-12">
             <div class="vertical-masonry-timeline-wrapper">
               <ul class="vertical-masonry-timeline">
-                {% for prelease in site.preleases %}
+                {% for post in site.posts %}
                 <li class="each-masonry-item wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="10">
                     <div class="timeline-block">
                       <span class="timeline-post-format"><i class="fa fa-newspaper-o"></i></span>
-
                       <article class="post clearfix">
                         <div class="entry-header">
-                          <div class="post-thumb"> <img alt="{{ prelease.title }}" src="{{ prelease.image }}" class="img-fullwidth img-responsive"> </div>
-
-                          <div class="entry-meta meta-absolute text-center p-15">
-                            <div class="display-table">
-                              <div class="display-table-cell">
-                                <ul>
-                                  <li><a href="#">{{ prelease.publication_date | date: '%b' }}</a></li>
-                                  <li><a href="#">{{ prelease.publication_date | date: '%d' }}</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <h2 class="entry-title">{{ prelease.title }}</h2>
+                          <div class="post-thumb"> <img alt="{{ post.title }}" src="{{ post.image }}" class="img-fullwidth img-responsive"> </div>
+                          <h5 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                          <ul class="list-inline font-12 mb-20 mt-10">
+                            <li>posted by <a href="#" class="text-theme-colored">{{ post.author }}</a></li>
+                            <li><span class="text-theme-colored">{{ post.publication_date }}</span></li>
+                          </ul>
+                        </div>
                         <div class="entry-content">
-                          <p class="mb-30">{{ prelease.subtitle }}<a href="{{ prelease.url }}">[...]</a></p>
+                          <p class="mb-30">{{ post.subtitle }}<a href="{{ post.url }}">[...]</a></p>
                           <ul class="list-inline like-comment pull-left font-12">
                             <li><i class="pe-7s-comment"></i>36</li>
                             <li><i class="pe-7s-like2"></i>125</li>
                           </ul>
-                          <a class="pull-right text-gray font-13" href="{{ prelease.url }}"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
+                          <a class="pull-right text-gray font-13" href="{{ post.url }}"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
                         </div>
                       </article>
                     </div>

@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<!-- Start main-content -->
+<div class="main-content">
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-white-5" data-bg-img="/assets/img/report.png">
+    <div class="container pt-60 pb-60">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="title">{{ page.title }}</h2>
+            <ol class="breadcrumb text-center text-black mt-10">
+              <li><a href="#">Home</a></li>
+              <li class="active text-theme-colored">{{ page.title }}</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cd-timeline" class="cd-container">
+    {% for publication in site.publications %}
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img" style="background: #eee;">
+        <img src="/assets/js/vertical-timeline/img/cd-icon-press.svg" alt="Picture">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <article class="post clearfix">
+          <div class="entry-header">
+            <div class="post-thumb"> <img alt="{{ publication.title }}" src="/assets/img/report.png" class="img-fullwidth img-responsive"> </div>
+            <div class="entry-meta meta-absolute text-center p-15">
+              <div class="display-table">
+                <div class="display-table-cell">
+                  <ul>
+                    <li><a href="#">{{ publication.publication_date | date: '%b' }}</a></li>
+                    <li><a href="#">{{ publication.publication_date | date: '%d' }}</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <h2 class="entry-title">{{ publication.subtitle }}</h2>
+            <!--<ul class="list-inline font-12 mb-20 mt-10">
+              <li>posted by <a href="#" class="text-theme-colored">{{ publication.author }}</a></li>
+              <li><span class="text-theme-colored">{{ publication.publication_date }}</span></li>
+            </ul>-->
+          </div>
+          <a href="{{ publication.file }}" target="blank" class="btn btn-colored btn-theme-colored btn-lg hvr-float-shadow" data-height="45px" style="width: 468px; text-transform: uppercase;">Download {{ publication.title }} here</a>
+          
+        </article>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+    {% endfor %}
+  </section>

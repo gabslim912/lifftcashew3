@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<!-- Start main-content -->
+<div class="main-content">
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-white-8" data-bg-img="http://placehold.it/1920x1280">
+    <div class="container pt-60 pb-60">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="title">{{ page.title }}</h2>
+            <ol class="breadcrumb text-center text-black mt-10">
+              <li><a href="#">Home</a></li>
+              <li class="active text-theme-colored">{{ page.title }}</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cd-timeline" class="cd-container">
+    {% for post in site.posts %}
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <img src="/assets/js/vertical-timeline/img/cd-icon-press.svg" alt="Picture">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <article class="post clearfix">
+          <div class="entry-header">
+            <div class="post-thumb"> <img alt="{{ post.title }}" src="{{ post.image }}" class="img-fullwidth img-responsive"> </div>
+            <h5 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+            <ul class="list-inline font-12 mb-20 mt-10">
+              <li>posted by <a href="#" class="text-theme-colored">{{ post.author }}</a></li>
+              <li><span class="text-theme-colored">{{ post.publication_date }}</span></li>
+            </ul>
+          </div>
+          <div class="entry-content">
+            <p class="mb-30">{{ post.subtitle }} <a href="{{ post.url }}">[...]</a></p>
+            <ul class="list-inline like-comment pull-left font-12">
+              <li><i class="pe-7s-comment"></i>36</li>
+              <li><i class="pe-7s-like2"></i>125</li>
+            </ul>
+            <a class="pull-right text-gray font-13" href="{{ post.url }}"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
+          </div>
+        </article>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+    {% endfor %}
+  </section>
