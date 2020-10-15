@@ -12,7 +12,7 @@ tags:
 - guinea-bissau
 - sfl
 - Shelter for Life
-publication_date: 10/15/2020 11:04
+publication_date: 2020-10-15 10:00:00 +0000
 title: 2020 SFL's cashew market challenges and expectations report
 subtitle: |-
   Shelter For Life International presents a report with the main challenges and
