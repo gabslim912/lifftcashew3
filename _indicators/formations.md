@@ -1,12 +1,12 @@
 ---
 title: Formations
 layout: indicator
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium,
-  accusantium impedit magnam nobis
-result: 6000
-goal: 10000
+subtitle: Amount of peoples that received a formation in 2020
+result: 2094
+goal: 2500
 category: Formations
-image: "/uploads/event_1.jpg"
+image: "/uploads/formation.jpg"
+unit: Peoples
 
 ---
 ***
