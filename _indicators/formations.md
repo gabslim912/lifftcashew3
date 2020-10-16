@@ -7,6 +7,7 @@ goal: 2500
 category: Formations
 image: "/uploads/formation.jpg"
 unit: Peoples
+percentage: 84
 
 ---
 ***
