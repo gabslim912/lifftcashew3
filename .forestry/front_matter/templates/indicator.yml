@@ -42,6 +42,16 @@ fields:
     min: 
     max: 
     step: 
+- name: percentage
+  type: number
+  label: Percentage
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - name: unit
   type: text
   config:
