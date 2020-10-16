@@ -42,6 +42,11 @@ fields:
     min: 
     max: 
     step: 
+- name: unit
+  type: text
+  config:
+    required: false
+  label: Measures unit
 - name: category
   type: select
   default: []
