@@ -3,23 +3,22 @@ layout: default
 ---
 
 <!-- Section: inner-header -->
-    <section class="inner-header divider parallax layer-overlay overlay-white-8" data-bg-img="http://placehold.it/1920x1280">
-      <div class="container pt-60 pb-60">
-        <!-- Section Content -->
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h2 class="title">{{ page.title }}</h2>
-              <ol class="breadcrumb text-center text-black mt-10">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pages</a></li>
-                <li class="active text-theme-colored">{{ page.title }}</li>
-              </ol>
-            </div>
+    <section class="inner-header divider parallax layer-overlay overlay-dark-8" data-bg-img="/assets/img/about.jpg">
+    <div class="container pt-60 pb-60">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="title text-white">{{ page.title }}</h2>
+            <ol class="breadcrumb text-center text-black mt-10">
+              <li><a href="#">Home</a></li>
+              <li class="active text-theme-colored">{{ page.title }}</li>
+            </ol>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Section: Causes -->
     <section>
@@ -40,26 +39,32 @@ layout: default
               <div class="causes bg-lighter maxwidth500 mb-sm-30">
                 <div class="thumb">
                   <img class="img-fullwidth" alt="{{ indicator.title }}" src="{{ indicator.image }}">
-                </div>
-                <div class="progress-item mt-0">
-                  <div class="progress mb-0">
-                    <div class="progress-bar" data-percent="60"></div>
+                  <div class="donate-piechart piechart-absolute">
+                    <div class="piechart-block">
+                      <div class="piechart" data-barcolor="#ccc" data-trackcolor="#fff" data-percent="60" data-linewidth="8">
+                        <span class="percent text-white font-weight-700">0 </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                
                 <div class="causes-details clearfix border-bottom p-15 pt-10">
                   <h4><a href="#">{{ indicator.title }}</a></h4>
                   <p>{{ indicator.subtitle }}</p>
-                  <ul class="list-inline clearfix mt-20">
-                    <li class="pull-left flip pr-0">Result: <span class="font-weight-700">{{ indicator.result }}</span></li>
-                    <li class="text-theme-colored pull-right flip pr-0">Goal: <span class="font-weight-700">{{ indicator.goal }}</span></li>
+                  <ul class="list-inline project-conditions text-center bg-deep m-0 p-10">
+                    <li class="current-fund"><strong>{{ indicator.goal }} {{ indicator.unity }}</strong>Target</li>
+                    <li class="target-fund"><strong>{{ indicator.result }} {{ indicator.unity }}</strong>Completed</li>
+                    <li class="remaining-days"><strong>127</strong>Days left</li>
                   </ul>
+                  
                   <div class="mt-10 clearfix">
-                   <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">See Details</a>
+                   <a href="https://www.shelter.org/donate" target="blank" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">Donate Now</a>
                    
                   </div>
                 </div>
               </div>
             </div>
+
             {% endfor %}
           </div>
         </div>

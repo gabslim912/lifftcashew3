@@ -4,7 +4,25 @@ layout: default
 <!-- Start main-content -->
 <div class="main-content">
     <!-- Section: inner-header -->
-    {% include heading.html %}
+    <!-- Section: inner-header -->
+<section class="inner-header divider parallax layer-overlay overlay-dark-1" data-bg-img="/assets/img/events.jpg">
+  <div class="container pt-100 pb-50">
+    <!-- Section Content -->
+    <div class="section-content pt-50">
+      <div class="row"> 
+        <div class="col-sm-8 text-left flip xs-text-center">
+          <h1 class="title text-white">{{ page.title }}</h1>
+        </div>
+        <div class="col-sm-4">
+          <ol class="breadcrumb text-right sm-text-center text-black mt-10">
+            <li><a href="#">Home</a></li>
+            <li class="active text-theme-colored">{{ page.title }}</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Section: event calendar -->
     <section>
