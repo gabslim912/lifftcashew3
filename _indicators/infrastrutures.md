@@ -7,5 +7,6 @@ goal: 100
 category: Infrastructure
 unit: Km
 image: "/uploads/cashew_16.jpg"
+percentage: 66
 
 ---
