@@ -37,24 +37,24 @@ layout: default
           	{% for indicator in site.indicators %}
             <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="10">
               <div class="causes bg-lighter maxwidth500 mb-sm-30">
-                <div class="thumb">
-                  <img class="img-fullwidth" alt="{{ indicator.title }}" src="{{ indicator.image }}" style="width: 360px; height: 270px;">
+                <div class="thumb layer-overlay overlay-dark-7">
+                  <img class="img-fullwidth " alt="{{ indicator.title }}" src="{{ indicator.image }}" style="width: 360px; height: 270px;">
                   <div class="donate-piechart piechart-absolute">
                     <div class="piechart-block">
-                      <div class="piechart" data-barcolor="#ccc" data-trackcolor="#fff" data-percent="60" data-linewidth="8">
+                      <div class="piechart" data-barcolor="#ccc" data-trackcolor="#fff" data-percent="{{ indicator.percentage }}" data-linewidth="8">
                         <span class="percent text-white font-weight-700">0 </span>
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                <div class="causes-details clearfix border-bottom p-15 pt-10">
+                <div class="causes-details clearfix border-bottom p-15 pt-10"/>
                   <h4><a href="#">{{ indicator.title }}</a></h4>
                   <p>{{ indicator.subtitle }}</p>
-                  <ul class="list-inline project-conditions text-center bg-deep m-0 p-10">
-                    <li class="current-fund"><strong>{{ indicator.goal }} {{ indicator.unit }}</strong>Target</li>
+                  <ul class="list-inline project-conditions text-center bg-deep m-0 p-10"  style="width: 320px; height: 100px;">
+                    <li class="current-fund"><strong>{{ indicator.goal }} {{ indicator.unit }}</strong>Targetted</li>
                     <li class="target-fund"><strong>{{ indicator.result }} {{ indicator.unit }}</strong>Completed</li>
-                    <li class="remaining-days"><strong>127</strong>Days left</li>
+                    
                   </ul>
                   
                   <div class="mt-10 clearfix">

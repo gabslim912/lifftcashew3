@@ -2843,7 +2843,7 @@ form .error {
 .project-conditions li {
   border-right: 1px solid #d3d3d3;
   color: #808080;
-  width: 32%;
+  
 }
 .project-conditions li:last-child {
   border-right: medium none;
