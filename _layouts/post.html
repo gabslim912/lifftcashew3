@@ -67,10 +67,9 @@ layout: default
                   </div>-->
                 </div>
               </div>
-              
-              <!--<div id="comments" class="comments-area pt-50">
-
-                <!-- Facebook Comments plugin --
+              <div id="comments" class="comments-area pt-20">
+              <h2 class="widget-title line-bottom">Leave a comment here</h2>
+                <!-- Facebook Comments plugin -->
                 <div id="fb-root"></div>
                 <script>(function(d, s, id) {
                   var js, fjs = d.getElementsByTagName(s)[0];
@@ -79,13 +78,10 @@ layout: default
                   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=409125935834772";
                   fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-comments" data-href="{{ page.url | absolute_url  }}" data-numposts="5" data-width="847"></div>
+                <!-- Facebook Comments end -->
 
-                <h3 id="comments-title"><span><fb:comments-count href="http://pc1/themeforest/thememascot/godown-latest/demo/blog-single-facebook-comments.html"></fb:comments-count></span> Comments</h3>
-                
-                <div class="fb-comments" data-href="http://pc1/themeforest/thememascot/godown-latest/demo/blog-single-facebook-comments.html" data-numposts="5"></div>
-                <!-- Facebook Comments end --
-
-              </div>-->
+              </div>
             </div>
           </div>
           <div class="col-md-3">
@@ -119,7 +115,7 @@ layout: default
 	                <h5 class="widget-title line-bottom">Latest News</h5>
 	                <div class="latest-posts">
 	                	{% for post in site.posts limit:5 %}
-		                <article class="post media-post clearfix pb-0 mb-10">
+		                <article class="post media-post clearfix pb-0 mb-10 bg-lighter">
 		                    <a class="post-thumb" href="{{ post.url }}"><img src="{{ post.image }}" alt="{{ post.title }}" style="width: 75px; height: 75px;"></a>
 		                    <div class="post-right">
 		                      <h4 class="post-title mt-0 text-justify"><a href="#">{{ post.title }}</a></h4>
@@ -129,14 +125,12 @@ layout: default
 		                {% endfor %}
 	                </div>
                 </div>
-                <!--<div class="widget">
-	                <h5 class="widget-title line-bottom">Photos from Flickr</h5>
-	                <div id="flickr-feed" class="clearfix">
-	                  <!-- Flickr Link --
-	                  <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08">
-	                  </script>
-	                </div>
-                </div>-->
+                <div class="widget">
+	                <h5 class="widget-title line-bottom">Our Facebook Page</h5>
+                  <div id="fb-root"></div>
+                  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v8.0&appId=894842400553895&autoLogAppEvents=1" nonce="xQZYtJQ2"></script>
+	                <div class="fb-page" data-href="https://web.facebook.com/LIFFTCashewSFL/" data-tabs="timeline" data-width="" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/LIFFTCashewSFL/" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/LIFFTCashewSFL/">SFL LIFFT-Cashew Project</a></blockquote></div>
+                </div>
             </div>
           </div>
         </div>
