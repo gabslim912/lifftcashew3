@@ -601,8 +601,8 @@ layout: default
               <div class="image-box-thum">
                 <img class="img-fullwidth" alt="" src="/assets/img/event_12.jpg">
               </div>
-              <h4 class="mb-5 text-white text-justify"><em>The integration of the three governments (Senegal, The Gambia and Guinea Bissau) remains one of the major priorities for the sustainability of the activities implemented.</em></h4>
-              <a class="font-14 text-theme-colored font-weight-600" href="/about.html">Read more..</a>
+              <h5 class="mb-5 text-white text-justify"><em>The integration of the three governments (Senegal, The Gambia and Guinea Bissau) remains one of the major priorities for the sustainability of the activities implemented. <a class="font-14 text-theme-colored font-weight-600" href="/about.html">Read more..</a></em></h5>
+              
             </div>
           </div>
         </div>
@@ -638,11 +638,11 @@ layout: default
                   </div>
                 </div>
                 <div class="entry-content border-1px p-20">
-                  <h3 class="entry-title mt-0 pt-0" style="height: 80px;"><a href="#">{{ post.title }}</a></h3>
-                  <ul class="list-inline entry-date font-12 mt-5">
+                  <h3 class="entry-title mt-0 pt-0 text-uppercase" style="height: 80px;"><a href="#">{{ post.title }}</a></h3>
+                  <!--<ul class="list-inline entry-date font-12 mt-5">
                     <li><i class="fa fa-clock-o mr-5"></i> {{ post.author }} </li>
                     <li><i class="fa fa-map-marker mr-5"></i> {{ post.location_t }}, {{ post.location_c }} </li>
-                  </ul>
+                  </ul>-->
                   <!--<p class="mb-20 mt-15 font-13">{{ post.content | slice: 0, 100 }}...</p>-->
                   <a class="mt-10 text-theme-colored" href="{{ post.url }}">Read more <i class="fa fa-angle-double-right"></i></a>
                 </div>
@@ -698,7 +698,7 @@ layout: default
                 </div>
                 <div class="media-body pl-20">
                   <div class="event-content pull-left flip">
-                    <h4 class="event-title media-heading font-raleway font-weight-700" style="font-size: 16px;"><a href="{{ event.title }}">{{ event.title }}</a></h4>
+                    <h2 class="event-title media-heading font-raleway font-weight-550"><a href="{{ event.title }}">{{ event.title }}</a></h2>
                     <span class="mb-10 text-gray-darkgray mr-10" style="font-size: 14px;"><i class="fa fa-clock-o mr-5 text-theme-colored"></i> at 5.00 pm - 7.30 pm</span>
                     <span class="text-gray-darkgray" style="font-size: 14px;"><i class="fa fa-map-marker mr-5"></i> {{ event.location_address }}, {{ event.location_town }}, {{ event.location_region }}, {{ event.location_country }}</span>
                     <!--<p class="mt-5" style="font-size: 14px; text-align: justify;" >{{ event.content | slice: 0, 80 }}...</p>-->

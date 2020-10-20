@@ -6,7 +6,7 @@ location_t: Ziguinchor
 location_r: Casamance
 location_c: Senegal
 categories: Cashew
-title: 5 Things our Beneficiaries are Thankful For
+title: 5 Things our Beneficiaries are Thankful For about our project
 subtitle: Feeling thankful? So are we! In the spirit of thanksgiving, we thought we
   would share 5 things our beneficiaries are thankful for
 tags:

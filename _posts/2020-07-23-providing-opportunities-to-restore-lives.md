@@ -6,7 +6,7 @@ location_t: Ziguinchor
 location_r: Senegambia
 location_c: Gambia
 categories: Project
-title: Strengthening the capacity of cashew associations and cooperatives
+title: Strengthening the capacity of cashew associations
 subtitle: ''
 tags:
 - cashew
