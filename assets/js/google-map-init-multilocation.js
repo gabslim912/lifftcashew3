@@ -2,9 +2,9 @@ function initialize() {
 
     // Multiple Markers
     var markers = [
-        ['London Eye, London', 51.503454,-0.119562],
-        ['Palace of Westminster, London', 51.499633,-0.124755],
-        ['Westminster Bridge, London', 51.501352,-0.120721]
+        ['SFL International, Ziguinchor', 12.559898,-16.278561],
+        ['SFL International, Bissau', 11.858382,-15.583215],
+        ['SFL International, Gambia', 13.456954,-16.700629]
     ];
                         
     // Info Window Content

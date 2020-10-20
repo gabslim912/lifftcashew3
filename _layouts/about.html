@@ -427,24 +427,23 @@ layout: default
               {% endfor %}
             </div>
             <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="owl-carousel-1col owl-dots-bottom-right" data-dots="true">
+              <div class="owl-carousel-1col owl-dots-bottom-center  bg-lighter" data-dots="true">
                 {% for story in site.stories %}
                 <div class="item">
                   <div class="row-fluid">
-                    <div class="col-md-12 ">
-                      <img src="{{ story.image }}" alt="{{ story.title }}" style="width: 530px; height: 290px;" >
+                    <div class="col-md-12" style="padding-right: 0px; padding-left: 0px;">
+                      <img src="{{ story.image }}" alt="{{ story.title }}" style="width: 555px; height: 290px; margin-bottom: 15px;" >
                     </div>
                     <div class="col-md-12">
-                      <h4 class="mb-0 text-black-666">Featured Stories:</h4>
-                      <h2 class="line-bottom mt-0">{{ story.title }}</h2>
-                      <!--<p class="text-justify" >{{ story.content | slice: 0, 300 }}...</p>-->
+                      <h2 class="line-bottom mt-0">Featured Stories: {{ story.title }}</h2>
+                      <!--<p class="text-justify" >{{ story.content | slice: 0, 300 }}...</p>
                       <div class="mt-10 mb-20">
-                        <ul class="list-inline clearfix mt-10">
+                        <ul class="list-inline clearfix">
                           <li class="pull-left flip pr-0">Date: <span class="font-weight-700 font-">{{story.date | date: "%b %d, %y"}} </span></li>
                           <li class="text-theme-colored pull-right flip pr-0">Location: <span class="font-weight-700">{{ story.location }}</span></li>
                         </ul>
-                      </div>
-                      <a class="btn btn-theme-colored btn-sm" href="{{ story.url }}">Read {{ story.first_name }} {{ story.last_name }} story</a>
+                      </div>-->
+                      <a class="btn btn-theme-colored btn-sm text-uppercase" href="{{ story.url }}">Read {{ story.first_name }} {{ story.last_name }} story</a>
                     </div>
                   </div>
                 </div>

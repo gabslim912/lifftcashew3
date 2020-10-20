@@ -154,7 +154,7 @@ layout: default
               <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://placehold.it/1920x1280" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
 
                 <!-- MAIN IMAGE -->
-                <img src="/assets/img/cashew_111.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <img src="/assets/img/cashew_261.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 
                 
                 <!-- LAYERS -->
@@ -265,7 +265,7 @@ layout: default
               <li data-index="rs-3" data-transition="fadeInUp" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://placehold.it/1920x1280" data-rotate="0" data-saveperformance="off" data-title="Slide 3" data-description="">
                 
                 <!-- MAIN IMAGE -->
-                <img src="/assets/img/cashew_27.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <img src="/assets/img/cashew_14111.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 
                 <!-- LAYERS -->
 
@@ -643,8 +643,8 @@ layout: default
                     <li><i class="fa fa-clock-o mr-5"></i> {{ post.author }} </li>
                     <li><i class="fa fa-map-marker mr-5"></i> {{ post.location_t }}, {{ post.location_c }} </li>
                   </ul>
-                  <p class="mb-20 mt-15 font-13">{{ post.content | slice: 0, 100 }}...</p>
-                  <a class="mt-0 text-theme-colored" href="{{ post.url }}">Read more <i class="fa fa-angle-double-right"></i></a>
+                  <!--<p class="mb-20 mt-15 font-13">{{ post.content | slice: 0, 100 }}...</p>-->
+                  <a class="mt-10 text-theme-colored" href="{{ post.url }}">Read more <i class="fa fa-angle-double-right"></i></a>
                 </div>
               </article>
             </div>
@@ -708,12 +708,12 @@ layout: default
               {% endfor %}
             </div>
             <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="owl-carousel-1col owl-dots-bottom-right" data-dots="true">
+              <div class="owl-carousel-1col owl-dots-bottom-center  bg-lighter" data-dots="true">
                 {% for story in site.stories %}
                 <div class="item">
                   <div class="row-fluid">
-                    <div class="col-md-12 ">
-                      <img src="{{ story.image }}" alt="{{ story.title }}" style="width: 540px; height: 290px; margin-bottom: 15px;" >
+                    <div class="col-md-12" style="padding-right: 0px; padding-left: 0px;">
+                      <img src="{{ story.image }}" alt="{{ story.title }}" style="width: 555px; height: 290px; margin-bottom: 15px;" >
                     </div>
                     <div class="col-md-12">
                       <h2 class="line-bottom mt-0">Featured Stories: {{ story.title }}</h2>
@@ -724,7 +724,7 @@ layout: default
                           <li class="text-theme-colored pull-right flip pr-0">Location: <span class="font-weight-700">{{ story.location }}</span></li>
                         </ul>
                       </div>-->
-                      <a class="btn btn-theme-colored btn-sm" href="{{ story.url }}">Read {{ story.first_name }} {{ story.last_name }} story</a>
+                      <a class="btn btn-theme-colored btn-sm text-uppercase" href="{{ story.url }}">Read {{ story.first_name }} {{ story.last_name }} story</a>
                     </div>
                   </div>
                 </div>
