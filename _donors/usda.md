@@ -3,8 +3,8 @@ layout: donors
 category: Funded by
 title: USDA
 logo: "/uploads/logo_usda.png"
-quote_author: Don Bice
-author_position: Deputy assistant
+quote_author: Gerald Turnbull
+author_position: Representative
 quote_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat,
   ipsum ac finibus porta, odio quam facilisis libero, ac mollis tellus massa non neque. '
 donor_or_partner_biography: USDA provide leadership on food, agriculture, natural
