@@ -10,14 +10,8 @@ quote_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent f
 donor_or_partner_biography: USDA provide leadership on food, agriculture, natural
   resources, rural development, nutrition, and related issues based on public policy,
   the best available science, and effective management.
-donor_or_partner_contribution: "LIFFT-Cashew-Linking Infrastructure, Finance and Farms
-  to Cashew, this is a 6-year program (2017-2023) funded by USDA to enhance the production
-  and trade of cashews in local and international markets.\nThe project works around
-  three objectives which are:\n• Production of RCN: Increase or maintain quality of
-  RCN outturn in 52-54 lbs;\n• Sales of RCN: Strengthen associations /cooperatives
-  and sale up to 50% of RCN produced\nthrough them by organizing collective sales;\n•
-  Processing of RCN: Increase processing of RCN to additional 30000 tons of RCN locally.\nThe
-  integration of the three governments (Senegal, The Gambia and Guinea Bissau) remains
-  one of the\nmajor priorities for the sustainability of the activities implemented. "
+donor_or_partner_contribution: |-
+  The LIFFT-Cashew Project is a 6-year program (2017 - 2023) funded by USDA to enhance the production and trade of cashews in local and international markets.
+  USDA has been investing in the cashew sector of West Africa for more than a decade through investment in production and processing, and everything in between. USDA has also brought together multiple international organizations and stakeholders to unite efforts to strengthen the cashew value chain in the region and make sure investments are operating at full capacity.
 
 ---
