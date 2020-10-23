@@ -35,7 +35,7 @@ layout: default
         <div class="section-content">
           <div class="row mtli-row-clearfix">
           	{% for indicator in site.indicators %}
-            <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="10">
+            <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInUp pb-30" data-wow-duration="1.5s" data-wow-offset="10">
               <div class="causes bg-lighter maxwidth500 mb-sm-30">
                 <div class="thumb layer-overlay overlay-dark-7">
                   <img class="img-fullwidth " alt="{{ indicator.title }}" src="{{ indicator.image }}" style="width: 360px; height: 270px;">
@@ -51,12 +51,10 @@ layout: default
                 <div class="causes-details clearfix border-bottom p-15 pt-10"/>
                   <h4><a href="#">{{ indicator.title }}</a></h4>
                   <p>{{ indicator.subtitle }}</p>
-                  <ul class="list-inline project-conditions text-center bg-deep m-0 p-10"  style="width: 320px; height: 100px;">
-                    <li class="current-fund"><strong>{{ indicator.goal }} {{ indicator.unit }}</strong>Targetted</li>
-                    <li class="target-fund"><strong>{{ indicator.result }} {{ indicator.unit }}</strong>Completed</li>
-                    
+                  <ul class="list-inline clearfix mt-20">
+                    <li class="pull-left flip pr-0">Completed: <span class="font-weight-700">{{ indicator.goal }} {{ indicator.unit }}</span></li>
+                    <li class="text-theme-colored pull-right flip pr-0">Goal: <span class="font-weight-700">{{ indicator.result }} {{ indicator.unit }}</span></li>
                   </ul>
-                  
                   <div class="mt-10 clearfix">
                    <a href="https://www.shelter.org/donate" target="blank" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">Donate Now</a>
                    
