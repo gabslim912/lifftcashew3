@@ -31,7 +31,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
         $botcheck = $_POST['form_botcheck'];
 
-        $toemail = 'spam.thememascot@gmail.com'; // Your Email Address
+        $toemail = 'spam.gabriel.akake@gmail.com'; // Your Email Address
         $toname = 'ThemeMascot'; // Your Name
 
         if( $botcheck == '' ) {
