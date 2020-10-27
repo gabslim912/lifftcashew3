@@ -1,7 +1,7 @@
 <?php
 
-require_once('phpmailer/class.phpmailer.php');
-require_once('phpmailer/class.smtp.php');
+require_once('/assets/includes/phpmailer/class.phpmailer.php');
+require_once('/assets/includes/phpmailer/class.smtp.php');
 
 $mail = new PHPMailer();
 
