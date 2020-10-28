@@ -1,7 +1,7 @@
 <?php
 
-require_once('/assets/includes/phpmailer/class.phpmailer.php');
-require_once('/assets/includes/phpmailer/class.smtp.php');
+require_once('phpmailer/class.phpmailer.php');
+require_once('phpmailer/class.smtp.php');
 
 $mail = new PHPMailer();
 
@@ -31,7 +31,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
         $botcheck = $_POST['form_botcheck'];
 
-        $toemail = 'spam.gabriel.akake@gmail.com'; // Your Email Address
+        $toemail = 'gabriel.akake@gmail.com'; // Your Email Address
         $toname = 'ThemeMascot'; // Your Name
 
         if( $botcheck == '' ) {
