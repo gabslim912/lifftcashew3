@@ -51,4 +51,5 @@ fields:
     required: false
   label: E-mail address
 pages:
+- team_members/alison-cameron.md
 - team_members/jamolidin-vohidov.md
