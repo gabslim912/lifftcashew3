@@ -1,4 +1,52 @@
 ---
 label: Team member
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: team_member
+  hidden: true
+- name: title
+  type: text
+  config:
+    required: false
+  label: Name
+- name: position
+  type: text
+  config:
+    required: false
+  label: Position
+- name: country
+  type: text
+  config:
+    required: false
+  label: Country
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  default: "/uploads/bio.png"
+- name: linked_in
+  type: text
+  config:
+    required: false
+  label: Linked in
+- name: facebook
+  type: text
+  config:
+    required: false
+  label: Facebook
+- name: google_plus
+  type: text
+  config:
+    required: false
+  label: Google plus
+- name: mail
+  type: text
+  config:
+    required: false
+  label: E-mail address
