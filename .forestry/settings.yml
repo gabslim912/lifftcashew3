@@ -51,7 +51,7 @@ sections:
   templates:
   - story
 - type: heading
-  label: Add job positions and donors here
+  label: Add job positions, team members and donors here
 - type: directory
   path: _jobs
   label: Job positions
@@ -59,6 +59,13 @@ sections:
   match: "**/*"
   templates:
   - job-position
+- type: directory
+  path: team_members
+  label: Team members
+  create: all
+  match: "**/*"
+  templates:
+  - team-member
 - type: directory
   path: _donors
   label: Donors and partners
