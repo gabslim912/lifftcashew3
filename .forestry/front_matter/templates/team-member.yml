@@ -35,21 +35,39 @@ fields:
   config:
     required: false
   label: Linked in
+  default: "#"
 - name: facebook
   type: text
   config:
     required: false
   label: Facebook
+  default: "#"
 - name: google_plus
   type: text
   config:
     required: false
   label: Google plus
+  default: "#"
 - name: mail
   type: text
   config:
     required: false
   label: E-mail address
+- name: education
+  type: text
+  config:
+    required: false
+  label: Education
+- name: address
+  type: text
+  config:
+    required: false
+  label: Address
+- name: phone
+  type: text
+  config:
+    required: false
+  label: Phone
 pages:
 - team_members/alison-cameron.md
 - team_members/jamolidin-vohidov.md
