@@ -35,6 +35,9 @@ collections:
   stories:
     title: Stories
     output: true
+  teams:
+    title: Teams
+    output: true
   faqs:
     title: faqs
     output: true
