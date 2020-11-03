@@ -428,18 +428,19 @@ layout: default
                           <li><i aria-hidden="true" class="fa fa-phone text-theme-color-2 mr-10"></i>Mob: {{ team.phone }}</li>
                           <li><i aria-hidden="true" class="fa fa-envelope-o text-theme-color-2 mr-10"></i>Email: {{ team.mail }}</li>
                         </ul>
+                        <ul class="styled-icons icon-theme-colored icon-circled icon-dark icon-sm mt-15 mb-0">
+                          <li><a href="{{ team.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="{{ team.google_plus }}"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="{{ team.linked_in }}"><i class="fa fa-linkedin"></i></a></li>
+                          
+                        </ul>
                         
                       </div>
                     </div>
                     <div class="info">
-                      <h3>{{ team.title }}</h3>
-                      <h4><small>{{ team.position }}</small></h4>
-                     
-                      <ul class="styled-icons icon-theme-colored icon-circled icon-dark icon-sm mt-15 mb-0">
-                        <li><a href="{{ team.facebook }}"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="{{ team.google_plus }}"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="{{ team.linked_in }}"><i class="fa fa-skype"></i></a></li>
-                      </ul>
+                      <h3 class="title text-theme-colored">{{ team.title }}</h3>
+                      <h6 style="font-weight: bold;;">{{ team.position }}</h6>
+                      <a href="#" class="btn btn-default btn-theme-colored btn-flat pull-left">Read More</a>
                     </div>
                   </div>
                 </div>
