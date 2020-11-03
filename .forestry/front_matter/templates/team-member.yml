@@ -68,9 +68,3 @@ fields:
   config:
     required: false
   label: Phone
-pages:
-- team_members/alison-cameron.md
-- team_members/elisabete-dumbia-da-silva.md
-- team_members/jamolidin-vohidov.md
-- team_members/kebba-jassey.md
-- team_members/laurent-gomis.md

@@ -60,7 +60,7 @@ sections:
   templates:
   - job-position
 - type: directory
-  path: team_members
+  path: teams
   label: Team members
   create: all
   match: "**/*"
