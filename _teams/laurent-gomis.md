@@ -1,6 +1,6 @@
 ---
 layout: team_member
-image: "/uploads/laurent_gomis.png"
+image: "/uploads/bio.png"
 linked_in: "#"
 facebook: "#"
 google_plus: "#"
