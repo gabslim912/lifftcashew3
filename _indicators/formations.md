@@ -1,7 +1,7 @@
 ---
-title: Formations
+title: Training
 layout: indicator
-subtitle: Amount of peoples that received a formation in 2020
+subtitle: Number of farmers that received training on organic production in 2020
 result: 2094
 goal: 2500
 category: Formations

@@ -1,12 +1,12 @@
 ---
 title: Infrastrutures
 layout: indicator
-subtitle: Number of kilometers of roads created in 2020 this far
-result: 66
-goal: 100
+subtitle: Number of kilometers of feeder roads constructed in 2020
+result: 42
+goal: 70
 category: Infrastructure
 unit: Km
 image: "/uploads/cashew_16.jpg"
-percentage: 66
+percentage: 60
 
 ---
