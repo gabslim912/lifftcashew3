@@ -24,6 +24,6 @@ The training is ongoing and currently involves Kombo Cashew Farmers Association 
 
 The participants were able to know the definition of cooperative and its way of doing business. At the same time, they tackled essential questions linked to cooperative values and principles while discussing their own values, useful for the good social and economic development of their organizations.
 
-[https://www.youtube.com/watch?v=DEEpLsleTls&ab_channel=NoalFarm](https://www.youtube.com/watch?v=DEEpLsleTls&ab_channel=NoalFarm "https://www.youtube.com/watch?v=DEEpLsleTls&ab_channel=NoalFarm")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DEEpLsleTls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The issues of leadership and democratic governance of the cooperatives were also addressed as well as the finance management. The participants greatly appreciated these training and mentioned about the importance of organizations of these kinds of training for population for creating one voice in price determination and support of farmers.
