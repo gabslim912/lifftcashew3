@@ -12,7 +12,7 @@ tags:
 - cashew
 - lifft cashew
 - cooperative
-publication_date: 2010-08-04 11:00:00 +0000
+publication_date: 2010-08-04T11:00:00.000+00:00
 image: "/uploads/kcfa-coops-training.jpg"
 
 ---
@@ -23,5 +23,7 @@ The aim of the training is to build capacity and accompany management staff of t
 The training is ongoing and currently involves Kombo Cashew Farmers Association (CKFA), Ndar Cashew Kaffo (NCSK), and Natal Cashew Growers and Processors Association (NCGPA).
 
 The participants were able to know the definition of cooperative and its way of doing business. At the same time, they tackled essential questions linked to cooperative values and principles while discussing their own values, useful for the good social and economic development of their organizations.
+
+[https://www.youtube.com/watch?v=DEEpLsleTls&ab_channel=NoalFarm](https://www.youtube.com/watch?v=DEEpLsleTls&ab_channel=NoalFarm "https://www.youtube.com/watch?v=DEEpLsleTls&ab_channel=NoalFarm")
 
 The issues of leadership and democratic governance of the cooperatives were also addressed as well as the finance management. The participants greatly appreciated these training and mentioned about the importance of organizations of these kinds of training for population for creating one voice in price determination and support of farmers.
